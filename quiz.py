@@ -58,7 +58,8 @@ DURATIONS = (20, 120, 90)
 class Quiz:
     def __init__(self, names, solo=False):
         self.names, self.solo = names, solo
-        self.round = self.question = self.turn = self.version = 0
+        self.round = 2 if solo else 0
+        self.question = self.turn = self.version = 0
         self.phase = "waiting"
         self.ends = self.turn_ends = 0
         self.scores = [0] * len(names)

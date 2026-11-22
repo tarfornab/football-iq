@@ -36,11 +36,10 @@ def new_round(count, revision=0):
         "player": 1,
         "phase": "pass",
         "revision": revision,
-        "suspect": None,
     }
 
 
-def move(game, action, suspect=None):
+def move(game, action):
     phase = game["phase"]
     if phase == "pass" and action == "reveal":
         game["phase"] = "role"
@@ -50,10 +49,7 @@ def move(game, action, suspect=None):
         else:
             game["player"] += 1
             game["phase"] = "pass"
-    elif phase == "discuss" and action == "vote" and suspect in range(1, game["count"] + 1):
-        game["suspect"] = suspect
-        game["phase"] = "result"
-    elif phase == "result" and action == "again":
+    elif phase in ("discuss", "result") and action == "again":
         return new_round(game["count"], revision=game["revision"] + 1)
     else:
         return game

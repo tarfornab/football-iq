@@ -157,5 +157,7 @@ window.arabicLabels = {
   "You caught the imposter!": "كشفتم المتخفي!",
   "The imposter wins!": "فاز المتخفي!",
   "Player {0} was the imposter.": "اللاعب {0} كان المتخفي.",
+  "Was in the senior squad for {0}.": "كان ضمن قائمة المنتخب الأول لـ{0}.",
+  "Take turns giving one clue each.": "تناوبوا على إعطاء تلميح واحد لكل لاعب.",
   "Play again": "العب مرة أخرى"
 };

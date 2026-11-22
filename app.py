@@ -5,9 +5,9 @@ from threading import Lock
 from time import monotonic
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
-from quiz import Quiz, ARABIC
+from quiz import Quiz
 from imposter import ROSTER, move as imposter_move, new_round as new_imposter_round
-from xo import Match, PLAYERS, SIZES
+from xo import Match, PLAYER_DIRECTORY, SIZES
 
 import qrcode
 from flask import (
@@ -19,10 +19,6 @@ app = Flask(__name__)
 rooms = {}
 imposter_rooms = {}
 room_lock = Lock()
-PLAYER_DIRECTORY = sorted(dict(
-    {name: ARABIC.get(name, name) for name in PLAYERS}
-    | {record["name"]: record["ar"] for record in ROSTER}
-).items())
 GAME_NAMES = {"quiz": "Quiz", "guess": "Guess", "xo": "X/O"}
 
 @app.after_request
@@ -559,12 +555,10 @@ def imposter_page(token):
         if request.method == "POST":
             if request.form.get("revision", type=int) == game["revision"]:
                 imposter_rooms[token] = imposter_move(
-                    game, request.form.get("action"), request.form.get("suspect", type=int)
+                    game, request.form.get("action")
                 )
             return redirect(url_for("imposter_page", token=token), code=303)
-        show_secret = game["phase"] == "result" or (
-            game["phase"] == "role" and game["player"] != game["imposter"]
-        )
+        show_secret = game["phase"] == "role" and game["player"] != game["imposter"]
         secret = ROSTER[game["secret"]] if show_secret else None
         response = app.make_response(render_template("imposter.html", game=game.copy(), secret=secret))
     response.headers["Cache-Control"] = "private, no-store, max-age=0"

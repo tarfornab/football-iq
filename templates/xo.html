@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Football X/O | Football IQ</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='design.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='xo.css', v='more-clues-1') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='xo.css', v='career-data-1') }}">
 <script id="initial-board" type="application/json">{{ board | tojson }}</script>
 <script id="player-directory" type="application/json">{{ player_directory | tojson }}</script>
-<script defer src="{{ url_for('static', filename='xo.js', v='more-clues-1') }}"></script>
-<script src="/static/arabic-labels.js?v=more-clues-1"></script>
-<script src="/static/language.js?v=more-clues-1"></script>
+<script defer src="{{ url_for('static', filename='xo.js', v='career-data-1') }}"></script>
+<script src="/static/arabic-labels.js?v=career-data-1"></script>
+<script src="/static/language.js?v=career-data-1"></script>
 </head>
 <body class="cup-body">
 <main class="xo-page" data-state="{{ state_url }}">
@@ -29,11 +29,11 @@
   <div class="xo-pitch" data-size="{{ board.size }}">
     <table id="board" aria-label="Football X/O board">
       <thead><tr><td class="xo-corner">X/O</td>{% for clue in board.columns %}
-        <th scope="col"><img class="clue-photo {{ clue.kind }}" src="{{ clue.image }}" alt=""><span class="xo-clue-label">{{ clue.name }}</span></th>
+        <th scope="col">{% if clue.image %}<img class="clue-photo {{ clue.kind }}" src="{{ clue.image }}" alt="">{% endif %}<span class="xo-clue-label">{{ clue.name }}</span></th>
       {% endfor %}</tr></thead>
       <tbody>{% for clue in board.rows %}
         {% set row_index = loop.index0 %}
-        <tr><th scope="row"><img class="clue-photo {{ clue.kind }}" src="{{ clue.image }}" alt=""><span class="xo-clue-label">{{ clue.name }}</span></th>
+        <tr><th scope="row">{% if clue.image %}<img class="clue-photo {{ clue.kind }}" src="{{ clue.image }}" alt="">{% endif %}<span class="xo-clue-label">{{ clue.name }}</span></th>
         {% for column in board.columns %}
           {% set cell = board.cells[row_index * board.size + loop.index0] %}
           <td><button type="button" class="xo-square" disabled>

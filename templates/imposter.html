@@ -6,7 +6,7 @@
   <title>Imposter | Football IQ</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='design.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='imposter.css') }}">
-  <script src="/static/arabic-labels.js?v=more-clues-1"></script>
+  <script src="/static/arabic-labels.js?v=imposter-replay-1"></script>
   <script src="/static/language.js?v=more-clues-1"></script>
 </head>
 <body class="cup-body">
@@ -31,22 +31,9 @@
         {% endif %}
         <p>Press Next before passing the phone.</p>
         <button type="submit" name="action" value="next">Next</button>
-      {% elif game.phase == "discuss" %}
-        <h2>Player 1, give the first clue.</h2>
-        <p>Take turns giving one clue each. Discuss, then record the group’s vote.</p>
-        <label for="suspect">Who is the imposter?</label>
-        <select id="suspect" name="suspect" required>
-          <option value="" disabled selected>Choose a player</option>
-          {% for n in range(1, game.count + 1) %}
-            <option value="{{ n }}">Player {{ n }}</option>
-          {% endfor %}
-        </select>
-        <button type="submit" name="action" value="vote">Confirm vote</button>
       {% else %}
-        <h2>{{ "You caught the imposter!" if game.suspect == game.imposter else "The imposter wins!" }}</h2>
-        <p>Player {{ game.imposter }} was the imposter.</p>
-        <img class="imposter-portrait" src="{{ url_for('static', filename=secret.image) }}" alt="">
-        <strong class="imposter-name" data-secret-name data-ar="{{ secret.ar }}">{{ secret.name }}</strong>
+        <h2>Player 1, give the first clue.</h2>
+        <p>Take turns giving one clue each.</p>
         <button type="submit" name="action" value="again">Play again</button>
       {% endif %}
     </form>

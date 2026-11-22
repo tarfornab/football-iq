@@ -29,6 +29,9 @@
   <div id="feedback" role="status"></div>
   <div id="scores"></div>
   <div id="results" class="table-wrap"></div>
+  <form id="play-again" method="post" action="{{ url_for('solo_quiz') }}" hidden>
+    <button class="primary" type="submit">Play again</button>
+  </form>
   <button id="next" class="primary" type="button" hidden></button>
 </main>
 <script>
@@ -94,7 +97,7 @@ function renderResults() {
 
   if (!['standings', 'done'].includes(state.phase)) return;
   if (state.solo) {
-    state.results.forEach(([score], i) => results.append(node('p', tr(state.roundNames[i]) + ' · ' + tr('{0} points', score))));
+    results.append(node('p', tr('{0} points', state.results[0][0])));
     return;
   }
   const order = state.names.map((_, i) => i).sort((a, b) => state.totals[b] - state.totals[a]);
@@ -138,6 +141,7 @@ function renderResults() {
 function render() {
   const { phase, round, team } = state;
   const path = byId('round-path');
+  path.hidden = state.solo;
   if (path.dataset.round !== String(round)) {
     path.replaceChildren(...state.roundNames.map((name, index) => {
       const label = node('span', tr(name), index === round ? 'active-round' : '');
@@ -152,7 +156,7 @@ function render() {
     ? tr(state.feedback ? 'Correct · +1 point' : 'Incorrect · 0 points') : '';
   if (feedback.textContent !== feedbackText) feedback.textContent = feedbackText;
   feedback.dataset.correct = state.feedback === true;
-  byId('round-label').textContent = (state.solo ? tr('Solo Quiz') : state.names[team]) + ' · ' + tr('Round {0} of 3', round + 1);
+  byId('round-label').textContent = state.solo ? tr('Solo Quiz') : state.names[team] + ' · ' + tr('Round {0} of 3', round + 1);
   const title = byId('title');
   if (phase === 'waiting' && !state.solo) {
     title.replaceChildren(tr('All teams') + ' ', node('span', tr('are ready')));
@@ -199,8 +203,9 @@ function render() {
     }
     button.classList.toggle('correct', i === state.correct);
   });
+  byId('play-again').hidden = !state.solo || !['standings', 'done'].includes(phase);
   const next = byId('next');
-  next.hidden = team !== 0 || ['kickoff', 'play', 'answer', 'done'].includes(phase);
+  next.hidden = (state.solo && phase === 'standings') || team !== 0 || ['kickoff', 'play', 'answer', 'done'].includes(phase);
   next.disabled = busy;
   next.textContent = tr(phase === 'waiting' ? 'Start quiz' : (round === 2 ? 'Final results' : 'Next round'));
   const scoreKey = [round, phase, state.number, ...state.scores].join(':');

@@ -52,6 +52,7 @@ function suggest() {
 }
 
 function picture(clue) {
+  if (!clue.image) return document.createDocumentFragment();
   const image = document.createElement('img');
   image.src = clue.image;
   image.alt = '';
@@ -63,6 +64,7 @@ function picture(clue) {
 function rule(clue) {
   const message = {
     club: 'Played for {0}.',
+    national: 'Was in the senior squad for {0}.',
     coach: 'Was coached by {0}.',
     player: 'Was a teammate of {0} at club or senior international level.'
   };
@@ -93,7 +95,7 @@ function openSquare(index) {
 function isPictureBoard(board) {
   return [3, 4, 5].includes(board?.size) && [board.rows, board.columns].every(clues =>
     Array.isArray(clues) && clues.length === board.size &&
-    clues.every(clue => clue && typeof clue.name === 'string' && typeof clue.image === 'string')
+    clues.every(clue => clue && typeof clue.name === 'string' && (clue.image === null || typeof clue.image === 'string'))
   );
 }
 
@@ -220,9 +222,7 @@ async function update(action, fields = {}) {
 
 get('guess').addEventListener('submit', event => {
   event.preventDefault();
-  const typed = playerInput.value.trim();
-  const exact = directory.find(([name, translated]) => [name, translated].some(value => normalizeName(value) === normalizeName(typed)));
-  const guess = picked || exact?.[0] || typed;
+  const guess = picked || playerInput.value.trim();
   if (guess) update('play', {cell: selected, guess});
 });
 playerInput.addEventListener('input', () => { picked = ''; suggest(); });
