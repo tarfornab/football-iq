@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Football IQ Game</title>
+
+  <link rel="stylesheet" href="static/design.css">
+<script src="/static/arabic-labels.js?v=more-clues-1"></script>
+<script src="/static/language.js?v=more-clues-1"></script>
+</head>
+<body>
+  <main class="landing">
+    <section class="screen" id="quiz">
+      <h1>Quiz</h1>
+      <div class="modes">
+        <a class="button" href="game.html?mode=quiz">Team</a>
+        <form action="/quiz/solo" method="post"><button class="button" type="submit">One Player</button></form>
+      </div>
+      <p role="status"></p>
+      <a class="button" href="#home">Back to games</a>
+    </section>
+
+    <section class="screen" id="guess">
+      <h1>Guess</h1>
+      <div class="modes">
+        <a class="button" href="game.html?mode=guess">Team</a>
+        <button class="button solo" type="button">One Player</button>
+      </div>
+      <p role="status"></p>
+      <a class="button" href="#home">Back to games</a>
+    </section>
+
+    <section class="screen" id="xo">
+      <h1>X/O</h1>
+      <div class="modes">
+        <a class="button" href="game.html?mode=xo">Team</a>
+        <form action="/xo/solo" method="post"><button class="button" type="submit">One Player</button></form>
+      </div>
+      <p role="status"></p>
+      <a class="button" href="#home">Back to games</a>
+    </section>
+
+    <section class="screen" id="imposter">
+      <h1>Imposter</h1>
+      <form class="player-form" method="post" action="/imposter">
+        <label for="players">How many players?</label>
+        <input id="players" name="players" type="number" min="3" max="20" value="4" step="1" required>
+        <button class="button" type="submit">Confirm</button>
+      </form>
+      <a class="button" href="#home">Back to games</a>
+    </section>
+
+    <section id="home">
+      <header class="stadium">
+        <div class="hero-copy">
+          <h1>The Football<br><span>IQ Game</span></h1>
+          <a class="button primary" href="#quiz">Play Quiz <span aria-hidden="true">↗</span></a>
+        </div>
+      </header>
+      <nav class="games" aria-label="Games">
+        <a class="button" href="#quiz"><strong>Quiz</strong><small>Play the three-round Quiz Cup</small></a>
+        <a class="button" href="#guess"><strong>Guess</strong><small>Name the player</small></a>
+        <a class="button" href="#xo"><strong>X/O</strong><small>Find the connection</small></a>
+        <a class="button" href="#imposter"><strong>Imposter</strong><small>Spot the odd one out</small></a>
+      </nav>
+    </section>
+  </main>
+
+  <script>
+    for (const button of document.querySelectorAll('.solo')) {
+      button.addEventListener('click', () => {
+        const message = button.closest('section').querySelector('[role="status"]');
+        message.textContent = tr('One Player selected.');
+      });
+    }
+
+  </script>
+</body>
+</html>

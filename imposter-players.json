@@ -1,0 +1,1442 @@
+[
+  {
+    "name": "Abdulrahman Ghareeb",
+    "image": "players/portrait-59478492.jpg",
+    "ar": "عبدالرحمن غريب"
+  },
+  {
+    "name": "Achraf Hakimi",
+    "image": "players/portrait-52004386.jpg",
+    "ar": "أشرف حكيمي"
+  },
+  {
+    "name": "Alan Shearer",
+    "image": "players/portrait-58682.jpg",
+    "ar": "آلان شيرر"
+  },
+  {
+    "name": "Alejandro Balde",
+    "image": "players/portrait-68446141.jpg",
+    "ar": "أليخاندرو بالدي"
+  },
+  {
+    "name": "Alejandro Garnacho",
+    "image": "players/portrait-70248902.jpg",
+    "ar": "أليخاندرو جارناتشو"
+  },
+  {
+    "name": "Alejandro Grimaldo",
+    "image": "players/wiki-alejandro_grimaldo.jpg",
+    "ar": "أليخاندرو جريمالدو"
+  },
+  {
+    "name": "Aleksandar Mitrović",
+    "image": "players/portrait-36861756.jpg",
+    "ar": "ألكسندر ميتروفيتش"
+  },
+  {
+    "name": "Alessandro Bastoni",
+    "image": "players/portrait-53035114.jpg",
+    "ar": "اليساندرو باستوني"
+  },
+  {
+    "name": "Alessandro Del Piero",
+    "image": "players/portrait-20118104.jpg",
+    "ar": "أليساندرو ديل بييرو"
+  },
+  {
+    "name": "Alexander Isak",
+    "image": "players/portrait-50076385.jpg",
+    "ar": "ألكسندر إسحاق"
+  },
+  {
+    "name": "Alexis Mac Allister",
+    "image": "players/portrait-55785510.jpg",
+    "ar": "الكسيس ماك أليستر"
+  },
+  {
+    "name": "Alexis Sánchez",
+    "image": "players/wiki-alexis_snchez.jpg",
+    "ar": "الكسيس سانشيز"
+  },
+  {
+    "name": "Alfredo Di Stéfano",
+    "image": "players/wiki-alfredo_di_stfano.jpg",
+    "ar": "ألفريدو دي ستيفانو"
+  },
+  {
+    "name": "Alisson Becker",
+    "image": "players/portrait-44160600.jpg",
+    "ar": "أليسون بيكر"
+  },
+  {
+    "name": "Alphonso Davies",
+    "image": "players/espn-236721.png",
+    "ar": "ألفونسو ديفيز"
+  },
+  {
+    "name": "Andrea Pirlo",
+    "image": "players/wiki-andrea_pirlo.jpg",
+    "ar": "أندريا بيرلو"
+  },
+  {
+    "name": "Andrew Robertson",
+    "image": "players/portrait-40159932.jpg",
+    "ar": "أندرو روبرتسون"
+  },
+  {
+    "name": "Andrés Iniesta",
+    "image": "players/portrait-2437065.jpg",
+    "ar": "أندريس إنييستا"
+  },
+  {
+    "name": "Anthony Elanga",
+    "image": "players/portrait-67638718.jpg",
+    "ar": "أنتوني إلانجا"
+  },
+  {
+    "name": "Antoine Griezmann",
+    "image": "players/portrait-24902944.jpg",
+    "ar": "أنطوان جريزمان"
+  },
+  {
+    "name": "Antonio Rüdiger",
+    "image": "players/portrait-34518845.jpg",
+    "ar": "أنطونيو روديجر"
+  },
+  {
+    "name": "Arda Güler",
+    "image": "players/wiki-arda_gler.jpg",
+    "ar": "أردا جولر"
+  },
+  {
+    "name": "Arjen Robben",
+    "image": "players/portrait-756433.jpg",
+    "ar": "آريين روبن"
+  },
+  {
+    "name": "Arturo Vidal",
+    "image": "players/portrait-7781742.jpg",
+    "ar": "ارتورو فيدال"
+  },
+  {
+    "name": "Aurélien Tchouaméni",
+    "image": "players/portrait-58002424.jpg",
+    "ar": "أوريليان تشواميني"
+  },
+  {
+    "name": "Bastian Schweinsteiger",
+    "image": "players/wiki-bastian_schweinsteiger.jpg",
+    "ar": "باستيان شفاينشتايجر"
+  },
+  {
+    "name": "Benjamin Šeško",
+    "image": "players/portrait-61902206.jpg",
+    "ar": "بنيامين شيشكو"
+  },
+  {
+    "name": "Bernardo Silva",
+    "image": "players/portrait-40113903.jpg",
+    "ar": "برناردو سيلفا"
+  },
+  {
+    "name": "Bobby Charlton",
+    "image": "players/wiki-bobby_charlton.jpg",
+    "ar": "بوبي تشارلتون"
+  },
+  {
+    "name": "Bradley Barcola",
+    "image": "players/portrait-69192660.jpg",
+    "ar": "برادلي باركولا"
+  },
+  {
+    "name": "Bruno Fernandes",
+    "image": "players/portrait-37898553.jpg",
+    "ar": "برونو فرنانديز"
+  },
+  {
+    "name": "Bruno Guimarães",
+    "image": "players/portrait-58985791.jpg",
+    "ar": "برونو غيماريش"
+  },
+  {
+    "name": "Bryan Mbeumo",
+    "image": "players/portrait-56633858.jpg",
+    "ar": "بريان مبيومو"
+  },
+  {
+    "name": "Bukayo Saka",
+    "image": "players/portrait-59196657.jpg",
+    "ar": "بوكايو ساكا"
+  },
+  {
+    "name": "Cafu",
+    "image": "players/portrait-615800.jpg",
+    "ar": "كافو"
+  },
+  {
+    "name": "Carlos Tevez",
+    "image": "players/portrait-1024181.jpg",
+    "ar": "كارلوس تيفيز"
+  },
+  {
+    "name": "Carlos Valderrama",
+    "image": "players/portrait-6878.jpg",
+    "ar": "كارلوس فالديراما"
+  },
+  {
+    "name": "Cesc Fàbregas",
+    "image": "players/portrait-957684.jpg",
+    "ar": "سيسك فابريغاس"
+  },
+  {
+    "name": "Christian Pulisic",
+    "image": "players/portrait-49209934.jpg",
+    "ar": "كريستيان بوليسيتش"
+  },
+  {
+    "name": "Clarence Seedorf",
+    "image": "players/portrait-616584.jpg",
+    "ar": "كلارنس سيدورف"
+  },
+  {
+    "name": "Claudio Caniggia",
+    "image": "players/portrait-1460441.jpg",
+    "ar": "كلاوديو كانيجيا"
+  },
+  {
+    "name": "Cody Gakpo",
+    "image": "players/espn-249524.png",
+    "ar": "كودي جاكبو"
+  },
+  {
+    "name": "Cole Palmer",
+    "image": "players/wiki-cole_palmer.jpg",
+    "ar": "كول بالمر"
+  },
+  {
+    "name": "Cristiano Ronaldo",
+    "image": "clues/ronaldo.jpg",
+    "ar": "كريستيانو رونالدو"
+  },
+  {
+    "name": "Dani Alves",
+    "image": "players/portrait-3508785.jpg",
+    "ar": "داني ألفيس"
+  },
+  {
+    "name": "Dani Carvajal",
+    "image": "players/portrait-36909154.jpg",
+    "ar": "داني كارفاخال"
+  },
+  {
+    "name": "Dani Olmo",
+    "image": "players/portrait-45486652.jpg",
+    "ar": "داني أولمو"
+  },
+  {
+    "name": "Daniel Passarella",
+    "image": "players/portrait-615782.jpg",
+    "ar": "دانيال باساريلا"
+  },
+  {
+    "name": "Daniele De Rossi",
+    "image": "players/portrait-1686203.jpg",
+    "ar": "دانييلي دي روسي"
+  },
+  {
+    "name": "Darwin Núñez",
+    "image": "players/wiki-darwin_nez.jpg",
+    "ar": "داروين نونيز"
+  },
+  {
+    "name": "David Alaba",
+    "image": "players/portrait-24053598.jpg",
+    "ar": "ديفيد ألابا"
+  },
+  {
+    "name": "David Beckham",
+    "image": "players/wiki-david_beckham.jpg",
+    "ar": "ديفيد بيكهام"
+  },
+  {
+    "name": "David Neres",
+    "image": "players/espn-245637.png",
+    "ar": "ديفيد نيريس"
+  },
+  {
+    "name": "David Silva",
+    "image": "players/portrait-4781788.jpg",
+    "ar": "ديفيد سيلفا"
+  },
+  {
+    "name": "David Villa",
+    "image": "players/portrait-3213059.jpg",
+    "ar": "ديفيد فيلا"
+  },
+  {
+    "name": "Dayot Upamecano",
+    "image": "players/portrait-47908529.jpg",
+    "ar": "دايوت أوباميكانو"
+  },
+  {
+    "name": "Declan Rice",
+    "image": "players/portrait-54100580.jpg",
+    "ar": "ديكلان رايس"
+  },
+  {
+    "name": "Dejan Kulusevski",
+    "image": "players/portrait-59720475.jpg",
+    "ar": "ديان كولوسيفسكي"
+  },
+  {
+    "name": "Dennis Bergkamp",
+    "image": "players/portrait-45497.jpg",
+    "ar": "دينيس بيركامب"
+  },
+  {
+    "name": "Denzel Dumfries",
+    "image": "players/espn-213248.png",
+    "ar": "دينزل دومفريس"
+  },
+  {
+    "name": "Derek Cornelius",
+    "image": "players/espn-238712.png",
+    "ar": "ديريك كورنيليوس"
+  },
+  {
+    "name": "Devyne Rensch",
+    "image": "players/espn-297300.png",
+    "ar": "ديفين رينش"
+  },
+  {
+    "name": "Diego Forlán",
+    "image": "players/portrait-842379.jpg",
+    "ar": "دييغو فورلان"
+  },
+  {
+    "name": "Diego Maradona",
+    "image": "players/wiki-diego_maradona.jpg",
+    "ar": "دييغو مارادونا"
+  },
+  {
+    "name": "Dominic Solanke",
+    "image": "players/portrait-44174775.jpg",
+    "ar": "دومينيك سولانكي"
+  },
+  {
+    "name": "Dominik Szoboszlai",
+    "image": "players/portrait-54622721.jpg",
+    "ar": "دومينيك زوبوسزلاي"
+  },
+  {
+    "name": "Donyell Malen",
+    "image": "players/espn-259481.png",
+    "ar": "دونيل مالين"
+  },
+  {
+    "name": "Dunga",
+    "image": "players/portrait-1486014.jpg",
+    "ar": "دونجا"
+  },
+  {
+    "name": "Dušan Vlahović",
+    "image": "players/portrait-49503072.jpg",
+    "ar": "دوشان فلاهوفيتش"
+  },
+  {
+    "name": "Dávid Hancko",
+    "image": "players/espn-257786.png",
+    "ar": "ديفيد هانكو"
+  },
+  {
+    "name": "Désiré Doué",
+    "image": "players/wiki-dsir_dou.jpg",
+    "ar": "ديزيريه دوي"
+  },
+  {
+    "name": "Eberechi Eze",
+    "image": "players/portrait-52923407.jpg",
+    "ar": "إبريتشي إزي"
+  },
+  {
+    "name": "Eden Hazard",
+    "image": "players/portrait-16152986.jpg",
+    "ar": "إيدن هازارد"
+  },
+  {
+    "name": "Ederson",
+    "image": "players/portrait-42928625.jpg",
+    "ar": "إيدرسون"
+  },
+  {
+    "name": "Edinson Cavani",
+    "image": "players/portrait-9017212.jpg",
+    "ar": "إدينسون كافاني"
+  },
+  {
+    "name": "Eduardo Camavinga",
+    "image": "players/wiki-eduardo_camavinga.jpg",
+    "ar": "إدواردو كامافينجا"
+  },
+  {
+    "name": "Emmanuel Adebayor",
+    "image": "players/portrait-2604793.jpg",
+    "ar": "إيمانويل أديبايور"
+  },
+  {
+    "name": "Emmanuel Emegha",
+    "image": "players/espn-304871.png",
+    "ar": "إيمانويل إميجا"
+  },
+  {
+    "name": "Emre Can",
+    "image": "players/portrait-32555065.jpg",
+    "ar": "إمري كان"
+  },
+  {
+    "name": "Endrick",
+    "image": "players/portrait-69845055.jpg",
+    "ar": "إندريك"
+  },
+  {
+    "name": "Enzo Fernández",
+    "image": "players/portrait-65737018.jpg",
+    "ar": "إنزو فرنانديز"
+  },
+  {
+    "name": "Enzo Francescoli",
+    "image": "players/portrait-615820.jpg",
+    "ar": "إنزو فرانسيسكولي"
+  },
+  {
+    "name": "Eric Cantona",
+    "image": "players/portrait-199933.jpg",
+    "ar": "إريك كانتونا"
+  },
+  {
+    "name": "Erling Haaland",
+    "image": "players/portrait-54333646.jpg",
+    "ar": "إيرلينج هالاند"
+  },
+  {
+    "name": "Eusébio",
+    "image": "players/portrait-23552524.jpg",
+    "ar": "أوزيبيو"
+  },
+  {
+    "name": "Fabio Cannavaro",
+    "image": "players/portrait-1081233.jpg",
+    "ar": "فابيو كانافارو"
+  },
+  {
+    "name": "Federico Chiesa",
+    "image": "players/portrait-51390272.jpg",
+    "ar": "فيديريكو كييزا"
+  },
+  {
+    "name": "Federico Valverde",
+    "image": "players/portrait-47669815.jpg",
+    "ar": "فيديريكو فالفيردي"
+  },
+  {
+    "name": "Ferenc Puskás",
+    "image": "players/portrait-205150.jpg",
+    "ar": "فيرينك بوشكاش"
+  },
+  {
+    "name": "Fermín López",
+    "image": "players/portrait-74480278.jpg",
+    "ar": "فيرمين لوبيز"
+  },
+  {
+    "name": "Fernando Torres",
+    "image": "players/wiki-fernando_torres.jpg",
+    "ar": "فرناندو توريس"
+  },
+  {
+    "name": "Ferran Torres",
+    "image": "players/portrait-55941004.jpg",
+    "ar": "فيران توريس"
+  },
+  {
+    "name": "Florian Wirtz",
+    "image": "players/wiki-florian_wirtz.jpg",
+    "ar": "فلوريان فيرتز"
+  },
+  {
+    "name": "Frank Lampard",
+    "image": "players/portrait-708834.jpg",
+    "ar": "فرانك لامبارد"
+  },
+  {
+    "name": "Franz Beckenbauer",
+    "image": "players/wiki-franz_beckenbauer.jpg",
+    "ar": "فرانتس بيكنباور"
+  },
+  {
+    "name": "Frenkie de Jong",
+    "image": "players/portrait-47231812.jpg",
+    "ar": "فرينكي دي يونج"
+  },
+  {
+    "name": "Gabriel Batistuta",
+    "image": "players/portrait-557154.jpg",
+    "ar": "غابرييل باتيستوتا"
+  },
+  {
+    "name": "Gabriel Magalhães",
+    "image": "players/portrait-53714769.jpg",
+    "ar": "غابرييل ماجالهايس"
+  },
+  {
+    "name": "Gabriel Martinelli",
+    "image": "players/portrait-59851710.jpg",
+    "ar": "غابرييل مارتينيلي"
+  },
+  {
+    "name": "Gaga Slonina",
+    "image": "players/espn-286774.png",
+    "ar": "غاغا سلونينا"
+  },
+  {
+    "name": "Gareth Bale",
+    "image": "players/portrait-5245920.jpg",
+    "ar": "غاريث بيل"
+  },
+  {
+    "name": "Garrincha",
+    "image": "players/portrait-700574.jpg",
+    "ar": "جارينشا"
+  },
+  {
+    "name": "Gavi",
+    "image": "players/wiki-gavi_footballer.jpg",
+    "ar": "جافي"
+  },
+  {
+    "name": "Gennaro Gattuso",
+    "image": "players/portrait-730831.jpg",
+    "ar": "جينارو جاتوزو"
+  },
+  {
+    "name": "George Best",
+    "image": "players/portrait-426381.jpg",
+    "ar": "جورج بيست"
+  },
+  {
+    "name": "George Weah",
+    "image": "players/wiki-george_weah.jpg",
+    "ar": "جورج ويا"
+  },
+  {
+    "name": "Gerd Müller",
+    "image": "players/portrait-172313.jpg",
+    "ar": "جيرد مولر"
+  },
+  {
+    "name": "Gerónimo Rulli",
+    "image": "players/espn-167192.png",
+    "ar": "جيرونيمو رولي"
+  },
+  {
+    "name": "Gianluigi Buffon",
+    "image": "players/wiki-gianluigi_buffon.jpg",
+    "ar": "جيانلويجي بوفون"
+  },
+  {
+    "name": "Gianluigi Donnarumma",
+    "image": "players/portrait-48358672.jpg",
+    "ar": "جيانلويجي دوناروما"
+  },
+  {
+    "name": "Giorgio Chiellini",
+    "image": "players/portrait-4474885.jpg",
+    "ar": "جورجيو كيليني"
+  },
+  {
+    "name": "Granit Xhaka",
+    "image": "players/portrait-28626100.jpg",
+    "ar": "جرانيت تشاكا"
+  },
+  {
+    "name": "Guti",
+    "image": "players/portrait-1479971.jpg",
+    "ar": "جوتي"
+  },
+  {
+    "name": "Harry Kane",
+    "image": "players/wiki-harry_kane.jpg",
+    "ar": "هاري كين"
+  },
+  {
+    "name": "Harry Maguire",
+    "image": "players/portrait-31481486.jpg",
+    "ar": "هاري ماغواير"
+  },
+  {
+    "name": "Hernán Crespo",
+    "image": "players/wiki-hernn_crespo.jpg",
+    "ar": "هيرنان كريسبو"
+  },
+  {
+    "name": "Hidetoshi Nakata",
+    "image": "players/portrait-222889.jpg",
+    "ar": "هيديتوشي ناكاتا"
+  },
+  {
+    "name": "Hugo Sánchez",
+    "image": "players/portrait-81285.jpg",
+    "ar": "هوغو سانشيز"
+  },
+  {
+    "name": "Igor Paixão",
+    "image": "players/espn-289114.png",
+    "ar": "ايجور بايكساو"
+  },
+  {
+    "name": "Iker Casillas",
+    "image": "players/portrait-507433.jpg",
+    "ar": "إيكر كاسياس"
+  },
+  {
+    "name": "Ismael Saibari",
+    "image": "players/espn-304572.png",
+    "ar": "اسماعيل السيباري"
+  },
+  {
+    "name": "Iván Zamorano",
+    "image": "players/portrait-543293.jpg",
+    "ar": "إيفان زامورانو"
+  },
+  {
+    "name": "Jack Grealish",
+    "image": "players/portrait-40522842.jpg",
+    "ar": "جاك جريليش"
+  },
+  {
+    "name": "Jadon Sancho",
+    "image": "players/portrait-54824287.jpg",
+    "ar": "جادون سانشو"
+  },
+  {
+    "name": "Jairzinho",
+    "image": "players/portrait-1275236.jpg",
+    "ar": "جيرزينيو"
+  },
+  {
+    "name": "Jamal Musiala",
+    "image": "players/wiki-jamal_musiala.jpg",
+    "ar": "جمال موسيالا"
+  },
+  {
+    "name": "James Maddison",
+    "image": "players/portrait-43552949.jpg",
+    "ar": "جيمس ماديسون"
+  },
+  {
+    "name": "James Rodríguez",
+    "image": "players/portrait-21780481.jpg",
+    "ar": "خاميس رودريغيز"
+  },
+  {
+    "name": "James Trafford",
+    "image": "players/portrait-68105997.jpg",
+    "ar": "جيمس ترافورد"
+  },
+  {
+    "name": "Jan Paul van Hecke",
+    "image": "players/espn-282583.png",
+    "ar": "جان بول فان هيكي"
+  },
+  {
+    "name": "Janis Blaswich",
+    "image": "players/espn-161825.png",
+    "ar": "جانيس بلاسويتش"
+  },
+  {
+    "name": "Jarrod Bowen",
+    "image": "players/portrait-51404254.jpg",
+    "ar": "جارود بوين"
+  },
+  {
+    "name": "Javier Zanetti",
+    "image": "players/wiki-javier_zanetti.jpg",
+    "ar": "خافيير زانيتي"
+  },
+  {
+    "name": "Jay-Jay Okocha",
+    "image": "players/portrait-511809.jpg",
+    "ar": "جاي جاي أوكوتشا"
+  },
+  {
+    "name": "Jeffrey de Lange",
+    "image": "players/espn-228707.png",
+    "ar": "جيفري دي لانج"
+  },
+  {
+    "name": "Jeremie Frimpong",
+    "image": "players/portrait-61887400.jpg",
+    "ar": "جيريمي فريمبونج"
+  },
+  {
+    "name": "Joey Veerman",
+    "image": "players/espn-240912.png",
+    "ar": "جوي فيرمان"
+  },
+  {
+    "name": "Johan Cruyff",
+    "image": "players/wiki-johan_cruyff.jpg",
+    "ar": "يوهان كرويف"
+  },
+  {
+    "name": "John Terry",
+    "image": "players/portrait-446099.jpg",
+    "ar": "جون تيري"
+  },
+  {
+    "name": "Jonathan Tah",
+    "image": "players/portrait-40169590.jpg",
+    "ar": "جوناثان تاه"
+  },
+  {
+    "name": "Jordan Pickford",
+    "image": "players/portrait-40147383.jpg",
+    "ar": "جوردان بيكفورد"
+  },
+  {
+    "name": "Jordan Teze",
+    "image": "players/espn-240660.png",
+    "ar": "جوردان تيز"
+  },
+  {
+    "name": "Jorrel Hato",
+    "image": "players/espn-353951.png",
+    "ar": "جوريل هاتو"
+  },
+  {
+    "name": "Joshua Kimmich",
+    "image": "players/portrait-40669088.jpg",
+    "ar": "جوشوا كيميتش"
+  },
+  {
+    "name": "João Cancelo",
+    "image": "players/wiki-joo_cancelo.jpg",
+    "ar": "جواو كانسيلو"
+  },
+  {
+    "name": "João Félix",
+    "image": "players/portrait-51665479.jpg",
+    "ar": "جواو فيليكس"
+  },
+  {
+    "name": "João Neves",
+    "image": "players/portrait-71531057.jpg",
+    "ar": "جواو نيفيس"
+  },
+  {
+    "name": "João Pedro",
+    "image": "players/portrait-60453906.jpg",
+    "ar": "جواو بيدرو"
+  },
+  {
+    "name": "Juan Román Riquelme",
+    "image": "players/portrait-1230308.jpg",
+    "ar": "خوان رومان ريكيلمي"
+  },
+  {
+    "name": "Jude Bellingham",
+    "image": "players/portrait-61455772.jpg",
+    "ar": "جود بيلينجهام"
+  },
+  {
+    "name": "Jules Koundé",
+    "image": "players/portrait-56270644.jpg",
+    "ar": "جول كوندي"
+  },
+  {
+    "name": "Julian Brandt",
+    "image": "players/portrait-41982628.jpg",
+    "ar": "جوليان براندت"
+  },
+  {
+    "name": "Julián Álvarez",
+    "image": "players/portrait-58930059.jpg",
+    "ar": "جوليان ألفاريز"
+  },
+  {
+    "name": "Jurriën Timber",
+    "image": "players/espn-282716.png",
+    "ar": "جورين تيمبر"
+  },
+  {
+    "name": "Jérémy Doku",
+    "image": "players/portrait-59155375.jpg",
+    "ar": "جيريمي دوكو"
+  },
+  {
+    "name": "Kaká",
+    "image": "players/wiki-kak.jpg",
+    "ar": "كاكا"
+  },
+  {
+    "name": "Karim Adeyemi",
+    "image": "players/portrait-58375902.jpg",
+    "ar": "كريم أديمي"
+  },
+  {
+    "name": "Karim Benzema",
+    "image": "players/wiki-karim_benzema.jpg",
+    "ar": "كريم بنزيمة"
+  },
+  {
+    "name": "Kayne Van Oevelen",
+    "image": "players/espn-324582.png",
+    "ar": "كاين فان أوفيلين"
+  },
+  {
+    "name": "Keisuke Honda",
+    "image": "players/portrait-14670286.jpg",
+    "ar": "كيسوكي هوندا"
+  },
+  {
+    "name": "Kenan Yıldız",
+    "image": "players/portrait-71246733.jpg",
+    "ar": "كنان يلدز"
+  },
+  {
+    "name": "Kevin De Bruyne",
+    "image": "players/portrait-19570009.jpg",
+    "ar": "كيفين دي بروين"
+  },
+  {
+    "name": "Khvicha Kvaratskhelia",
+    "image": "players/portrait-60029724.jpg",
+    "ar": "خفيتشا كفاراتسخيليا"
+  },
+  {
+    "name": "Kieran Trippier",
+    "image": "players/wiki-kieran_trippier.jpg",
+    "ar": "كيران تريبير"
+  },
+  {
+    "name": "Kingsley Coman",
+    "image": "players/portrait-38558166.jpg",
+    "ar": "كينغسلي كومان"
+  },
+  {
+    "name": "Kobbie Mainoo",
+    "image": "players/portrait-72020953.jpg",
+    "ar": "كوبي ماينو"
+  },
+  {
+    "name": "Kolo Touré",
+    "image": "players/portrait-1024827.jpg",
+    "ar": "كولو توريه"
+  },
+  {
+    "name": "Kylian Mbappé",
+    "image": "clues/mbappe.jpg",
+    "ar": "كيليان مبابي"
+  },
+  {
+    "name": "Lamine Yamal",
+    "image": "players/wiki-lamine_yamal.jpg",
+    "ar": "لامين يامال"
+  },
+  {
+    "name": "Lautaro Martínez",
+    "image": "players/portrait-48712806.jpg",
+    "ar": "لاوتارو مارتينيز"
+  },
+  {
+    "name": "Leonardo Bonucci",
+    "image": "players/portrait-5149412.jpg",
+    "ar": "ليوناردو بونوتشي"
+  },
+  {
+    "name": "Leroy Sané",
+    "image": "players/portrait-42540213.jpg",
+    "ar": "ليروي ساني"
+  },
+  {
+    "name": "Liam Delap",
+    "image": "players/portrait-65409225.jpg",
+    "ar": "ليام ديلاب"
+  },
+  {
+    "name": "Lionel Messi",
+    "image": "clues/messi.png",
+    "ar": "ليونيل ميسي"
+  },
+  {
+    "name": "Lisandro Martínez",
+    "image": "players/espn-233937.png",
+    "ar": "ليساندرو مارتينيز"
+  },
+  {
+    "name": "Lothar Matthäus",
+    "image": "players/portrait-475445.jpg",
+    "ar": "لوثار ماتيوس"
+  },
+  {
+    "name": "Loïs Openda",
+    "image": "players/espn-276265.png",
+    "ar": "لويس أوبيندا"
+  },
+  {
+    "name": "Lucas Paquetá",
+    "image": "players/portrait-54175958.jpg",
+    "ar": "لوكاس باكيتا"
+  },
+  {
+    "name": "Luka Modrić",
+    "image": "players/wiki-luka_modri.jpg",
+    "ar": "لوكا مودريتش"
+  },
+  {
+    "name": "Manuel Neuer",
+    "image": "players/wiki-manuel_neuer.jpg",
+    "ar": "مانويل نوير"
+  },
+  {
+    "name": "Marc Cucurella",
+    "image": "players/portrait-54962756.jpg",
+    "ar": "مارك كوكوريلا"
+  },
+  {
+    "name": "Marc Guiu",
+    "image": "players/portrait-75033654.jpg",
+    "ar": "مارك جويو"
+  },
+  {
+    "name": "Marcel Sabitzer",
+    "image": "players/portrait-32781434.jpg",
+    "ar": "مارسيل سابيتزر"
+  },
+  {
+    "name": "Marcelo",
+    "image": "players/portrait-6858503.jpg",
+    "ar": "مارسيلو"
+  },
+  {
+    "name": "Marcelo Salas",
+    "image": "players/portrait-424153.jpg",
+    "ar": "مارسيلو سالاس"
+  },
+  {
+    "name": "Marcos Senesi",
+    "image": "players/espn-233945.png",
+    "ar": "ماركوس سينسي"
+  },
+  {
+    "name": "Marcus Rashford",
+    "image": "players/portrait-49547315.jpg",
+    "ar": "ماركوس راشفورد"
+  },
+  {
+    "name": "Mario Kempes",
+    "image": "players/portrait-610924.jpg",
+    "ar": "ماريو كيمبس"
+  },
+  {
+    "name": "Martin Ødegaard",
+    "image": "players/wiki-martin_degaard.jpg",
+    "ar": "مارتن أوديغارد"
+  },
+  {
+    "name": "Mason Mount",
+    "image": "players/portrait-55038279.jpg",
+    "ar": "ميسون ماونت"
+  },
+  {
+    "name": "Matheus Nunes",
+    "image": "players/portrait-64176124.jpg",
+    "ar": "ماتيوس نونيس"
+  },
+  {
+    "name": "Mathys Tel",
+    "image": "players/portrait-68483686.jpg",
+    "ar": "هاتف ماتيس"
+  },
+  {
+    "name": "Matthijs de Ligt",
+    "image": "players/portrait-51303795.jpg",
+    "ar": "ماتياس دي ليخت"
+  },
+  {
+    "name": "Mesut Özil",
+    "image": "players/wiki-mesut_zil.jpg",
+    "ar": "مسعود اوزيل"
+  },
+  {
+    "name": "Michael Ballack",
+    "image": "players/portrait-501452.jpg",
+    "ar": "مايكل بالاك"
+  },
+  {
+    "name": "Michael Essien",
+    "image": "players/portrait-2360567.jpg",
+    "ar": "مايكل ايسيان"
+  },
+  {
+    "name": "Mika Biereth",
+    "image": "players/espn-308552.png",
+    "ar": "ميكا بيريث"
+  },
+  {
+    "name": "Mike Maignan",
+    "image": "players/portrait-47333067.jpg",
+    "ar": "مايك مينيان"
+  },
+  {
+    "name": "Miroslav Klose",
+    "image": "players/portrait-201840.jpg",
+    "ar": "ميروسلاف كلوزه"
+  },
+  {
+    "name": "Mohamed Salah",
+    "image": "clues/salah.jpg",
+    "ar": "محمد صلاح"
+  },
+  {
+    "name": "Mohammed Kudus",
+    "image": "players/espn-266599.png",
+    "ar": "محمد قدوس"
+  },
+  {
+    "name": "Moisés Caicedo",
+    "image": "players/portrait-65162701.jpg",
+    "ar": "مويسيس كايسيدو"
+  },
+  {
+    "name": "Morgan Rogers",
+    "image": "players/portrait-59876948.jpg",
+    "ar": "مورجان روجرز"
+  },
+  {
+    "name": "Neymar",
+    "image": "clues/neymar.jpg",
+    "ar": "نيمار"
+  },
+  {
+    "name": "Nico Williams",
+    "image": "players/portrait-67525403.jpg",
+    "ar": "نيكو ويليامز"
+  },
+  {
+    "name": "Nicolas Jackson",
+    "image": "players/portrait-65616522.jpg",
+    "ar": "نيكولاس جاكسون"
+  },
+  {
+    "name": "Nicolás Tagliafico",
+    "image": "players/espn-145190.png",
+    "ar": "نيكولاس تاغليافيكو"
+  },
+  {
+    "name": "Nicolò Barella",
+    "image": "players/portrait-46926514.jpg",
+    "ar": "نيكولو باريلا"
+  },
+  {
+    "name": "Noa Lang",
+    "image": "players/espn-255344.png",
+    "ar": "نوا لانج"
+  },
+  {
+    "name": "Noni Madueke",
+    "image": "players/espn-293236.png",
+    "ar": "نوني مادويكي"
+  },
+  {
+    "name": "Noussair Mazraoui",
+    "image": "players/espn-239350.png",
+    "ar": "نصير مزراوي"
+  },
+  {
+    "name": "Obed Vargas",
+    "image": "players/espn-318554.png",
+    "ar": "عوبيد فارغاس"
+  },
+  {
+    "name": "Oliver Kahn",
+    "image": "players/portrait-347547.jpg",
+    "ar": "أوليفر كان"
+  },
+  {
+    "name": "Ollie Watkins",
+    "image": "players/portrait-42709956.jpg",
+    "ar": "أولي واتكينز"
+  },
+  {
+    "name": "Ousmane Dembélé",
+    "image": "players/portrait-48621084.jpg",
+    "ar": "عثمان ديمبيلي"
+  },
+  {
+    "name": "Paolo Maldini",
+    "image": "players/portrait-147719.jpg",
+    "ar": "باولو مالديني"
+  },
+  {
+    "name": "Park Ji-sung",
+    "image": "players/portrait-628232.jpg",
+    "ar": "بارك جي سونج"
+  },
+  {
+    "name": "Patrick Kluivert",
+    "image": "players/portrait-615769.jpg",
+    "ar": "باتريك كلويفرت"
+  },
+  {
+    "name": "Patrick Vieira",
+    "image": "players/portrait-229730.jpg",
+    "ar": "باتريك فييرا"
+  },
+  {
+    "name": "Pau Cubarsí",
+    "image": "players/portrait-74669990.jpg",
+    "ar": "باو كوبارسي"
+  },
+  {
+    "name": "Paul Scholes",
+    "image": "players/wiki-paul_scholes.jpg",
+    "ar": "بول سكولز"
+  },
+  {
+    "name": "Pedri",
+    "image": "players/wiki-pedri.jpg",
+    "ar": "بيدري"
+  },
+  {
+    "name": "Pedro Neto",
+    "image": "players/portrait-54132604.jpg",
+    "ar": "بيدرو نيتو"
+  },
+  {
+    "name": "Pelé",
+    "image": "players/portrait-24953.jpg",
+    "ar": "بيليه"
+  },
+  {
+    "name": "Phil Foden",
+    "image": "players/portrait-55662294.jpg",
+    "ar": "فيل فودين"
+  },
+  {
+    "name": "Pierre-Emerick Aubameyang",
+    "image": "players/wiki-pierreemerick_aubameyang.jpg",
+    "ar": "بيير إيمريك أوباميانج"
+  },
+  {
+    "name": "Radamel Falcao",
+    "image": "players/portrait-7698038.jpg",
+    "ar": "راداميل فالكاو"
+  },
+  {
+    "name": "Rafael Leão",
+    "image": "players/portrait-54143488.jpg",
+    "ar": "رافائيل لياو"
+  },
+  {
+    "name": "Raphinha",
+    "image": "players/portrait-53347136.jpg",
+    "ar": "رافينها"
+  },
+  {
+    "name": "Raymond Kopa",
+    "image": "players/portrait-615836.jpg",
+    "ar": "ريمون كوبا"
+  },
+  {
+    "name": "Reece James",
+    "image": "players/portrait-57778547.jpg",
+    "ar": "ريس جيمس"
+  },
+  {
+    "name": "René Higuita",
+    "image": "players/portrait-1648431.jpg",
+    "ar": "رينيه هيجيتا"
+  },
+  {
+    "name": "Ricardo Quaresma",
+    "image": "players/portrait-800594.jpg",
+    "ar": "ريكاردو كواريسما"
+  },
+  {
+    "name": "Rivaldo",
+    "image": "players/portrait-258947.jpg",
+    "ar": "ريفالدو"
+  },
+  {
+    "name": "Riyad Mahrez",
+    "image": "players/portrait-41586458.jpg",
+    "ar": "رياض محرز"
+  },
+  {
+    "name": "Robert Lewandowski",
+    "image": "players/wiki-robert_lewandowski.jpg",
+    "ar": "روبرت ليفاندوفسكي"
+  },
+  {
+    "name": "Roberto Carlos",
+    "image": "players/portrait-454123.jpg",
+    "ar": "روبرتو كارلوس"
+  },
+  {
+    "name": "Robin van Persie",
+    "image": "players/portrait-22048328.jpg",
+    "ar": "روبن فان بيرسي"
+  },
+  {
+    "name": "Rodri",
+    "image": "players/wiki-rodri_footballer_born_1996.jpg",
+    "ar": "رودري"
+  },
+  {
+    "name": "Rodrygo",
+    "image": "players/wiki-rodrygo.jpg",
+    "ar": "رودريغو"
+  },
+  {
+    "name": "Roger Milla",
+    "image": "players/portrait-426859.jpg",
+    "ar": "روجر ميلا"
+  },
+  {
+    "name": "Romário",
+    "image": "players/portrait-615807.jpg",
+    "ar": "روماريو"
+  },
+  {
+    "name": "Ronald Araújo",
+    "image": "players/portrait-58389828.jpg",
+    "ar": "رونالد أروجو"
+  },
+  {
+    "name": "Ronaldinho",
+    "image": "players/wiki-ronaldinho.jpg",
+    "ar": "رونالدينيو"
+  },
+  {
+    "name": "Ronaldo Nazário",
+    "image": "players/portrait-66164.jpg",
+    "ar": "رونالدو نازاريو"
+  },
+  {
+    "name": "Ruben Kluivert",
+    "image": "players/espn-301354.png",
+    "ar": "روبن كلويفرت"
+  },
+  {
+    "name": "Ruud Gullit",
+    "image": "players/portrait-58684.jpg",
+    "ar": "رود خوليت"
+  },
+  {
+    "name": "Ruud van Nistelrooy",
+    "image": "players/portrait-371475.jpg",
+    "ar": "رود فان نيستلروي"
+  },
+  {
+    "name": "Ryan Giggs",
+    "image": "players/wiki-ryan_giggs.jpg",
+    "ar": "رايان غيغز"
+  },
+  {
+    "name": "Ryan Gravenberch",
+    "image": "players/espn-274632.png",
+    "ar": "ريان جرافينبيرش"
+  },
+  {
+    "name": "Rúben Dias",
+    "image": "players/wiki-rben_dias.jpg",
+    "ar": "روبن دياس"
+  },
+  {
+    "name": "Rúben Neves",
+    "image": "players/portrait-43465987.jpg",
+    "ar": "روبن نيفيز"
+  },
+  {
+    "name": "Sadio Mané",
+    "image": "players/portrait-34758489.jpg",
+    "ar": "ساديو ماني"
+  },
+  {
+    "name": "Salem Al-Dawsari",
+    "image": "players/portrait-36343956.jpg",
+    "ar": "سالم الدوسري"
+  },
+  {
+    "name": "Samuel Eto’o",
+    "image": "players/wiki-samuel_etoo.jpg",
+    "ar": "صامويل إيتو"
+  },
+  {
+    "name": "Samuel Kuffour",
+    "image": "players/portrait-2461715.jpg",
+    "ar": "صموئيل كوفور"
+  },
+  {
+    "name": "Serge Gnabry",
+    "image": "players/portrait-37131000.jpg",
+    "ar": "سيرج جنابري"
+  },
+  {
+    "name": "Sergej Milinković-Savić",
+    "image": "players/portrait-41192407.jpg",
+    "ar": "سيرجي ميلينكوفيتش سافيتش"
+  },
+  {
+    "name": "Sergio Agüero",
+    "image": "players/portrait-3406259.jpg",
+    "ar": "سيرجيو اجويرو"
+  },
+  {
+    "name": "Sergio Ramos",
+    "image": "players/portrait-2424743.jpg",
+    "ar": "سيرجيو راموس"
+  },
+  {
+    "name": "Shinji Kagawa",
+    "image": "players/portrait-17837763.jpg",
+    "ar": "شينجي كاجاوا"
+  },
+  {
+    "name": "Silvano Vos",
+    "image": "players/espn-335207.png",
+    "ar": "سيلفانو فوس"
+  },
+  {
+    "name": "Son Heung-min",
+    "image": "players/portrait-29152920.jpg",
+    "ar": "سون هيونج مين"
+  },
+  {
+    "name": "Steven Gerrard",
+    "image": "players/portrait-547384.jpg",
+    "ar": "ستيفن جيرارد"
+  },
+  {
+    "name": "Sócrates",
+    "image": "players/portrait-23939880.jpg",
+    "ar": "سقراط"
+  },
+  {
+    "name": "Teun Koopmeiners",
+    "image": "players/espn-258968.png",
+    "ar": "تيون كوبمينرز"
+  },
+  {
+    "name": "Theo Hernández",
+    "image": "players/portrait-51444047.jpg",
+    "ar": "ثيو هيرنانديز"
+  },
+  {
+    "name": "Thibaut Courtois",
+    "image": "players/portrait-30657971.jpg",
+    "ar": "تيبو كورتوا"
+  },
+  {
+    "name": "Thierry Henry",
+    "image": "players/wiki-thierry_henry.jpg",
+    "ar": "تييري هنري"
+  },
+  {
+    "name": "Thomas Müller",
+    "image": "players/wiki-thomas_mller.jpg",
+    "ar": "توماس مولر"
+  },
+  {
+    "name": "Tim Cahill",
+    "image": "players/portrait-1679232.jpg",
+    "ar": "تيم كاهيل"
+  },
+  {
+    "name": "Tim Howard",
+    "image": "players/wiki-tim_howard.jpg",
+    "ar": "تيم هوارد"
+  },
+  {
+    "name": "Toni Kroos",
+    "image": "players/portrait-11472953.jpg",
+    "ar": "توني كروس"
+  },
+  {
+    "name": "Trent Alexander-Arnold",
+    "image": "players/portrait-52095403.jpg",
+    "ar": "ترينت ألكسندر أرنولد"
+  },
+  {
+    "name": "Victor Osimhen",
+    "image": "players/portrait-54003367.jpg",
+    "ar": "فيكتور أوسيمين"
+  },
+  {
+    "name": "Viktor Gyökeres",
+    "image": "players/portrait-55267164.jpg",
+    "ar": "فيكتور جيوكيريس"
+  },
+  {
+    "name": "Vinícius Júnior",
+    "image": "players/portrait-53991642.jpg",
+    "ar": "فينيسيوس جونيور"
+  },
+  {
+    "name": "Virgil van Dijk",
+    "image": "players/portrait-35611957.jpg",
+    "ar": "فيرجيل فان ديك"
+  },
+  {
+    "name": "Vitinha",
+    "image": "players/portrait-61633762.jpg",
+    "ar": "فيتينها"
+  },
+  {
+    "name": "Wayne Rooney",
+    "image": "players/wiki-wayne_rooney.jpg",
+    "ar": "واين روني"
+  },
+  {
+    "name": "Wesley Sneijder",
+    "image": "players/portrait-816211.jpg",
+    "ar": "ويسلي شنايدر"
+  },
+  {
+    "name": "William Saliba",
+    "image": "players/portrait-58639532.jpg",
+    "ar": "وليم صليبا"
+  },
+  {
+    "name": "Xavi Simons",
+    "image": "players/espn-332962.png",
+    "ar": "تشافي سيمونز"
+  },
+  {
+    "name": "Yaya Touré",
+    "image": "players/wiki-yaya_tour.jpg",
+    "ar": "يايا توريه"
+  },
+  {
+    "name": "Zico",
+    "image": "players/portrait-615810.jpg",
+    "ar": "زيكو"
+  },
+  {
+    "name": "Zlatan Ibrahimović",
+    "image": "players/wiki-zlatan_ibrahimovi.jpg",
+    "ar": "زلاتان إبراهيموفيتش"
+  },
+  {
+    "name": "Ángel Di María",
+    "image": "players/portrait-8918937.jpg",
+    "ar": "أنخيل دي ماريا"
+  },
+  {
+    "name": "Éder Militão",
+    "image": "players/portrait-54050517.jpg",
+    "ar": "ايدير ميليتاو"
+  }
+]

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Setup | The Football IQ Game</title>
+
+  <link rel="stylesheet" href="static/design.css">
+</head>
+<body>
+  <main>
+    <h1>Team Setup</h1>
+
+    <div id="team-picker">
+      <label for="team-count">How many teams?</label>
+      <select id="team-count">
+        <option value="" selected disabled>Choose 1 to 6</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+    </div>
+
+    <div id="teams" class="teams static-teams" aria-live="polite"></div>
+
+    <a id="back" href="index.html">Back to games</a>
+  </main>
+
+  <script>
+    const mode = new URLSearchParams(window.location.search).get('mode');
+    const teamPicker = document.querySelector('#team-picker');
+    const teamCount = document.querySelector('#team-count');
+    const teams = document.querySelector('#teams');
+    const back = document.querySelector('#back');
+
+    function showTeams(count) {
+      teams.replaceChildren();
+
+      for (let number = 1; number <= count; number++) {
+        const card = document.createElement('h2');
+        card.className = 'card ready-card';
+        card.textContent = 'Team ' + number;
+        teams.append(card);
+      }
+    }
+
+    if (['quiz', 'guess', 'xo'].includes(mode)) {
+      back.href = 'index.html#' + mode;
+      back.textContent = 'Back to mode selection';
+    }
+
+    if (mode === 'xo') {
+      teamPicker.hidden = true;
+      showTeams(2);
+    } else {
+      teamCount.addEventListener('change', () => {
+        showTeams(Number(teamCount.value));
+      });
+      showTeams(Number(teamCount.value));
+    }
+  </script>
+</body>
+</html>

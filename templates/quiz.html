@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz Cup | The Football IQ Game</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='design.css') }}">
+<script src="/static/arabic-labels.js?v=more-clues-1"></script>
+<script src="/static/language.js?v=more-clues-1"></script>
+</head>
+<body class="cup-body">
+<main class="cup-page">
+  <a class="site-nav" href="{{ url_for('home') }}">Football <span>IQ</span> Game</a>
+  <p class="team-slot" id="round-label"></p>
+  <h1 id="title">Quiz <span>Cup</span></h1>
+  <div id="round-path" class="round-path" aria-label="Cup rounds"></div>
+  <div id="kickoff" class="kickoff" hidden><span>Kickoff in</span><strong id="kickoff-count"></strong></div>
+  <p id="message" role="status"></p>
+  <div id="ready-teams" class="teams"></div>
+  <section id="game" class="card quiz-stage" hidden>
+    <div id="clock"><strong id="seconds"></strong><progress id="timer" aria-label="Time remaining"></progress><p id="turn"></p><progress id="fuse" max="20" aria-label="Time before the Boom explodes on this turn" hidden></progress></div>
+    <p id="topic" class="team-slot quiz-topic"></p>
+    <h2 id="question"></h2>
+    <div id="answers" class="options">
+      <button type="button"></button><button type="button"></button>
+      <button type="button"></button><button type="button"></button>
+    </div>
+  </section>
+  <div id="feedback" role="status"></div>
+  <div id="scores"></div>
+  <div id="results" class="table-wrap"></div>
+  <button id="next" class="primary" type="button" hidden></button>
+</main>
+<script>
+const endpoint = withGameLanguage({{ state_url | tojson }});
+const byId = id => document.getElementById(id);
+const answerButtons = [...byId('answers').querySelectorAll('button')];
+let state, busy = false, polling = false, requestNumber = 0, lastResponse = 0;
+let deadline, turnDeadline, renderedScore = '';
+
+function node(tag, content, css) {
+  const el = document.createElement(tag);
+  if (content !== undefined) el.textContent = content;
+  if (css) el.className = css;
+  return el;
+}
+
+function updateClock() {
+  if (!state) return;
+  if (state.phase === 'kickoff') {
+    byId('kickoff-count').textContent = Math.max(0, Math.ceil((deadline - performance.now()) / 1000));
+    return;
+  }
+  if (!['play', 'answer'].includes(state.phase)) return;
+  const remaining = Math.max(0, (deadline - performance.now()) / 1000);
+  const turnRemaining = Math.max(0, (turnDeadline - performance.now()) / 1000);
+  byId('seconds').textContent = state.phase === 'answer'
+    ? tr(state.number === 15 ? 'Standings in {0}s' : 'Next question in {0}s', Math.ceil(remaining))
+    : tr('{0} seconds left', Math.ceil(remaining));
+  byId('timer').value = remaining;
+  byId('fuse').hidden = state.round !== 1;
+  byId('fuse').value = turnRemaining;
+  byId('clock').classList.toggle('urgent', state.round === 1 && turnRemaining <= 5);
+  byId('turn').textContent = state.round === 1
+    ? tr('{0} holds the Boom · {1}s on this turn', state.solo ? tr('You') : state.names[state.turn], Math.ceil(turnRemaining))
+    : state.round === 0 ? tr('Question {0} of 15', state.number) : '';
+  for (const button of answerButtons) {
+    button.disabled = state.phase !== 'play' || busy || remaining <= 0 || state.submitted ||
+      (state.round === 1 && (state.turn !== state.team || turnRemaining <= 0));
+  }
+}
+
+function renderResults() {
+  const scores = byId('scores');
+  const results = byId('results');
+  scores.replaceChildren();
+  results.replaceChildren();
+  if (state.phase === 'answer') {
+    const bars = node('div', undefined, 'bars');
+    const scale = state.round === 0 ? 15 * state.names.length : Math.max(1, ...state.scores);
+    state.scores.forEach((score, i) => {
+      const award = state.phase === 'answer' ? state.awards[i] : 0;
+      const card = node('div', undefined, 'bar-card');
+      const track = node('div', undefined, 'track');
+      const fill = node('div', undefined, 'fill');
+      fill.style.height = (score / scale * 100) + '%';
+      fill.style.setProperty('--previous', ((score - award) / scale * 100) + '%');
+      track.append(fill);
+      card.append(node('strong', score + (award ? ' (+' + award + ')' : '')), track, node('div', state.names[i]));
+      bars.append(card);
+    });
+    scores.append(bars);
+  }
+
+  if (!['standings', 'done'].includes(state.phase)) return;
+  if (state.solo) {
+    state.results.forEach(([score], i) => results.append(node('p', tr(state.roundNames[i]) + ' · ' + tr('{0} points', score))));
+    return;
+  }
+  const order = state.names.map((_, i) => i).sort((a, b) => state.totals[b] - state.totals[a]);
+  const previous = state.names.map((_, i) => i).sort((a, b) =>
+    (state.totals[b] - state.cup.at(-1)[b]) - (state.totals[a] - state.cup.at(-1)[a])
+  );
+  const final = state.phase === 'done';
+  results.append(node('h2', tr(final ? 'Final standings' : 'Cup standings'), 'standings-title'));
+  if (final) {
+    const winners = order.filter(i => state.totals[i] === state.totals[order[0]]);
+    const banner = node('div', undefined, 'winner-banner');
+    banner.append(node('span', tr(winners.length === 1 ? 'Cup winner' : 'Joint Cup winners')), node('strong', winners.map(i => state.names[i]).join(' · ')));
+    results.append(banner);
+  }
+  const table = node('table', undefined, 'standings-board');
+  const heading = table.createTHead().insertRow();
+  ['Rank', 'Team', ...(final ? [] : ['Round score']), 'Cup points'].forEach(label => {
+    const column = node('th', tr(label));
+    column.scope = 'col';
+    heading.append(column);
+  });
+  const body = table.createTBody();
+  order.forEach((i, index) => {
+    const rank = order.findIndex(team => state.totals[team] === state.totals[i]) + 1;
+    const row = body.insertRow();
+    row.classList.toggle('your-team', i === state.team);
+    row.style.setProperty('--movement', final ? 0 : previous.indexOf(i) - index);
+    row.append(node('td', String(rank).padStart(2, '0'), 'rank-number'));
+    const name = node('th', state.names[i]);
+    name.scope = 'row';
+    if (i === state.team) name.append(node('span', tr('Your team'), 'team-marker'));
+    row.append(name);
+    if (!final) row.append(node('td', state.scores[i]));
+    const total = node('td', state.totals[i], 'standing-total');
+    if (!final) total.append(node('small', '+' + state.cup.at(-1)[i]));
+    row.append(total);
+  });
+  results.append(table);
+}
+
+function render() {
+  const { phase, round, team } = state;
+  const path = byId('round-path');
+  if (path.dataset.round !== String(round)) {
+    path.replaceChildren(...state.roundNames.map((name, index) => {
+      const label = node('span', tr(name), index === round ? 'active-round' : '');
+      if (index === round) label.setAttribute('aria-current', 'step');
+      return label;
+    }));
+    path.dataset.round = round;
+  }
+  byId('kickoff').hidden = phase !== 'kickoff';
+  const feedback = byId('feedback');
+  const feedbackText = phase === 'play' && state.feedback !== null
+    ? tr(state.feedback ? 'Correct · +1 point' : 'Incorrect · 0 points') : '';
+  if (feedback.textContent !== feedbackText) feedback.textContent = feedbackText;
+  feedback.dataset.correct = state.feedback === true;
+  byId('round-label').textContent = (state.solo ? tr('Solo Quiz') : state.names[team]) + ' · ' + tr('Round {0} of 3', round + 1);
+  const title = byId('title');
+  if (phase === 'waiting' && !state.solo) {
+    title.replaceChildren(tr('All teams') + ' ', node('span', tr('are ready')));
+  } else {
+    title.textContent = tr(phase === 'done' ? (state.solo ? 'Quiz complete' : 'Cup results') : state.title);
+  }
+  const ready = byId('ready-teams');
+  ready.hidden = phase !== 'waiting' || state.solo;
+  if (!ready.hidden && !ready.hasChildNodes()) {
+    state.names.forEach((name, i) => {
+      const card = node('article', undefined, 'card ready-card');
+      card.append(node('p', tr('Team {0}', i + 1), 'team-slot'), node('h2', name));
+      ready.append(card);
+    });
+  }
+  let message = '';
+  if (phase === 'waiting' && state.solo) message = tr('Ready to play?');
+  if (phase === 'play' && state.submitted) message = tr('Answer locked in.');
+  if (phase === 'answer') message = tr('Correct answer: {0}', state.choices[state.correct]);
+  if (phase === 'standings' && round === 1 && state.exploded !== null) {
+    const last = state.names.filter((_, i) => state.scores[i] === Math.min(...state.scores));
+    message = tr('The Boom exploded on {0} · −{1} points.', state.solo ? tr('You') : state.names[state.exploded], state.penalty);
+    if (!state.solo) message += ' ' + tr('Lowest score: {0}.', last.join(', '));
+  }
+  if (phase === 'standings' && round === 2 && !state.solo) {
+    const first = state.names.filter((_, i) => state.scores[i] === Math.max(...state.scores));
+    message = tr(first.length === 1 ? 'Round winner: {0}' : 'Tied for first: {0}', first.join(', '));
+  }
+  if (team !== 0 && !['kickoff', 'play', 'answer', 'done'].includes(phase)) message += ' ' + tr('Waiting for Team 1.');
+  const status = byId('message');
+  if (status.textContent !== message) status.textContent = message;
+  document.body.dataset.phase = phase;
+  document.body.dataset.round = round;
+  byId('game').hidden = !['play', 'answer'].includes(phase);
+  byId('clock').hidden = !['play', 'answer'].includes(phase);
+  byId('timer').max = phase === 'answer' ? 4 : state.duration;
+  byId('topic').textContent = state.topic;
+  byId('question').textContent = state.question;
+  answerButtons.forEach((button, i) => {
+    const choice = state.choices[i] || '';
+    if (button.dataset.choice !== choice) {
+      button.replaceChildren(node('span', (arabic ? 'أبجد' : 'ABCD')[i], 'answer-key'), node('span', choice));
+      button.dataset.choice = choice;
+    }
+    button.classList.toggle('correct', i === state.correct);
+  });
+  const next = byId('next');
+  next.hidden = team !== 0 || ['kickoff', 'play', 'answer', 'done'].includes(phase);
+  next.disabled = busy;
+  next.textContent = tr(phase === 'waiting' ? 'Start quiz' : (round === 2 ? 'Final results' : 'Next round'));
+  const scoreKey = [round, phase, state.number, ...state.scores].join(':');
+  if (scoreKey !== renderedScore) {
+    renderedScore = scoreKey;
+    renderResults();
+  }
+  updateClock();
+}
+
+async function refresh(action, choice) {
+  if (action ? busy : (busy || polling)) return;
+  if (action) busy = true;
+  else polling = true;
+  const id = ++requestNumber;
+  if (action) render();
+  try {
+    const response = await fetch(endpoint, action ? {
+      method: 'POST', headers: {'Content-Type': 'application/json', 'X-Football-Language': gameLanguage},
+      body: JSON.stringify({action, choice, revision: state.revision, phase: state.phase}),
+    } : {cache: 'no-store', headers: {'X-Football-Language': gameLanguage}});
+    if (!response.ok) throw new Error('Room unavailable');
+    const data = await response.json();
+    if (id >= lastResponse) {
+      lastResponse = id;
+      state = data;
+      deadline = performance.now() + state.remaining * 1000;
+      turnDeadline = performance.now() + state.turnRemaining * 1000;
+    }
+    if (state) render();
+  } catch {
+    byId('message').textContent = tr('Could not reach the room. Reconnecting…');
+  } finally {
+    if (action) {
+      busy = false;
+      byId('next').disabled = false;
+      updateClock();
+    } else {
+      polling = false;
+    }
+  }
+}
+answerButtons.forEach((button, i) => button.addEventListener('click', () => refresh('answer', i)));
+byId('next').addEventListener('click', () => refresh('next'));
+refresh();
+setInterval(() => refresh(), 650);
+setInterval(updateClock, 100);
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.imposter-page { max-width: 34rem; }
+.imposter-card { text-align: center; }
+.imposter-card form { gap: .85rem; }
+.imposter-card h2, .imposter-card p { margin: 0; }
+.imposter-card p { color: var(--muted); }
+.imposter-portrait { display: block; margin: auto; width: min(55vw, 13rem); height: min(55vw, 13rem); object-fit: contain; object-position: center; border-radius: .65rem; background: #1b2721; }
+.imposter-name { color: var(--lime); font-size: clamp(1.5rem, 5vw, 2.1rem); }
