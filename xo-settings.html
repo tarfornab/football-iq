@@ -1,0 +1,8 @@
+          <label for="board-size">Board size</label>
+          <select id="board-size" name="board-size">
+            {% for side in board_sizes %}
+              <option value="{{ side }}">{{ side }}×{{ side }}</option>
+            {% endfor %}
+          </select>
+          <label for="difficulty">Difficulty</label>
+          <select id="difficulty" name="difficulty"><option value="Easy">Easy</option><option selected value="Medium">Medium</option><option value="Hard">Hard</option></select>

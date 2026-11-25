@@ -6,6 +6,7 @@ from itertools import combinations
 from functools import lru_cache
 from random import choice, sample, shuffle
 from time import monotonic
+from statistics import median
 
 from collections import defaultdict
 
@@ -17,8 +18,15 @@ TURN_SECONDS = 30
 SIZES = (3, 4, 5)
 
 
+NAME_CHARACTERS = str.maketrans({"ø": "o", "ł": "l", "đ": "d", "ð": "d", "ı": "i",
+                                 "ى": "ي", "ی": "ي", "ک": "ك", "ـ": None})
+DISPLAY_ALIASES = {"Heung-min Son": "Son Heung-min", "Min-jae Kim": "Kim Min-jae",
+                   "Andrew Cole": "Andy Cole", "Neymar Jr.": "Neymar"}
+
+
 def normalize(name):
-    return "".join(c for c in unicodedata.normalize("NFKD", name.casefold()) if c.isalnum())
+    folded = unicodedata.normalize("NFKD", name.casefold()).translate(NAME_CHARACTERS)
+    return "".join(c for c in folded if c.isalnum())
 
 
 # Each clue has its own evidence set: club appearance, senior teammate,
@@ -28,6 +36,7 @@ players_by_clue = defaultdict(set)
 
 
 def add_fact(clue, name):
+    name = DISPLAY_ALIASES.get(name, name)
     identity = normalize(name)
     names_by_key.setdefault(identity, name)
     if CLUES[clue][2] != "player" or identity != normalize(CLUES[clue][0]):
@@ -137,6 +146,13 @@ def national_clue(country):
     return key
 
 
+# A single senior call-up list establishes overlap. Keep each camp separate
+# from previous call-ups and never infer a coach from a shared season.
+regional_squads = json.loads(Path(__file__).with_name("xo-national-squads.json").read_text(encoding="utf-8"))
+for squad in regional_squads:
+    manager = coach_keys.get(normalize(squad["coach"] or ""))
+    add_team_group(national_clue(squad["team"]), manager, squad["names"])
+
 for _, country, squad in national_history["tournament_squads"]:
     key = national_clue(country)
     for player in squad:
@@ -144,6 +160,14 @@ for _, country, squad in national_history["tournament_squads"]:
 
 for _, _, country, manager, lineup in national_history["matches"]:
     add_team_group(national_clue(country), coach_keys.get(normalize(manager)), lineup)
+
+# Positive senior appearances from 11v11 season tables, published club-season
+# statistics and player career records. Coach and teammate additions use lineups
+# from European Cup, UEFA Cup, EURO and Gold Cup finals or audited match sheets.
+verified = json.loads(Path(__file__).with_name("xo-verified-links.json").read_text(encoding="utf-8"))
+for key, names in verified.items():
+    for name in names:
+        add_fact(key, name)
 
 # Being teammates is reciprocal. Add the reverse fact when the answer also
 # appears as a player clue. Sharing an opponent never creates a link.
@@ -218,19 +242,42 @@ DECKS = {}
 LAST_BOARDS = {}
 
 
-def draw_board(size):
-    deck = DECKS.setdefault(size, [])
+@lru_cache(maxsize=9)
+def difficulty_boards(size, difficulty):
+    familiar = {normalize(p["name"]) for p in ROSTER}
+    ease = {}
+    def score(board):
+        counts = []
+        familiar_squares = 0
+        for row in board[0]:
+            for column in board[1]:
+                pair = frozenset((row, column))
+                if pair not in ease:
+                    names = CONNECTIONS[pair]
+                    ease[pair] = len(names), any(normalize(n) in familiar for n in names)
+                count, recognizable = ease[pair]
+                counts.append(count)
+                familiar_squares += recognizable
+        return median(counts), familiar_squares, sum(min(n, 20) for n in counts)
+    ranked = sorted(layouts(size), key=score)
+    level = ("Hard", "Medium", "Easy").index(difficulty)
+    return ranked[len(ranked)*level//3:len(ranked)*(level+1)//3]
+
+
+def draw_board(size, difficulty="Medium"):
+    key = (size, difficulty)
+    deck = DECKS.setdefault(key, [])
     if not deck:
-        deck.extend(layouts(size))
+        deck.extend(difficulty_boards(size, difficulty))
         shuffle(deck)
-        recent = LAST_BOARDS.get(size, ())
+        recent = LAST_BOARDS.get(key, ())
         for i in range(min(2, len(deck))):
             target = len(deck) - 1 - i
             if deck[target] in recent:
                 replacement = next(j for j in range(target) if deck[j] not in recent)
                 deck[target], deck[replacement] = deck[replacement], deck[target]
     board = deck.pop()
-    LAST_BOARDS[size] = (board, *LAST_BOARDS.get(size, ())[:1])
+    LAST_BOARDS[key] = (board, *LAST_BOARDS.get(key, ())[:1])
     return board
 
 
@@ -258,22 +305,30 @@ for name, translated in PLAYER_DIRECTORY:
     for label in {name, translated, PLAYER_TRANSLATIONS.get(name, name)}:
         FULL_NAMES[normalize(label)].add(name)
         SHORT_NAMES[normalize(label.split()[-1])].add(name)
-for alias, name in ALIASES.items():
+for alias, name in {**DISPLAY_ALIASES, **ALIASES}.items():
     if name in PLAYERS:
-        FULL_NAMES[alias].add(name)
+        FULL_NAMES[normalize(alias)].add(name)
 
 
 class Match:
-    def __init__(self, names, solo=False, size=3, revision=0, now=None):
+    def __init__(self, names, solo=False, size=3, revision=0, now=None, difficulty="Medium",
+                 best_of=1, turn_seconds=30, round_minutes=0, round_index=0, scores=None):
         self.size = size
-        rows, columns = draw_board(size)
+        self.difficulty = difficulty
+        self.best_of = best_of
+        self.turn_seconds = turn_seconds
+        self.round_minutes = round_minutes
+        self.round_index = round_index
+        self.scores = list(scores or [0, 0])
+        self.expired = False
+        rows, columns = draw_board(size, difficulty)
         self.rows = sample(rows, size)
         self.columns = sample(columns, size)
         self.answers = [sorted(CONNECTIONS[frozenset((r, c))]) for r in self.rows for c in self.columns]
         self.names = names
         self.solo = solo
         self.cells = [None] * (size * size)
-        self.turn = 0
+        self.turn = round_index % 2
         self.revision = revision
         self.winner = None
         self.line = ()
@@ -281,7 +336,9 @@ class Match:
         self.lives = 3 if solo else None
         self.end_vote = None
         self.notice = ""
-        self.deadline = None if solo else (monotonic() if now is None else now) + TURN_SECONDS
+        started = monotonic() if now is None else now
+        self.deadline = None if solo else started + turn_seconds
+        self.round_end = started + round_minutes * 60 if round_minutes and not solo else None
 
     @property
     def lost(self):
@@ -289,23 +346,47 @@ class Match:
 
     @property
     def finished(self):
-        return self.winner is not None or all(self.cells) or self.revealed or self.lost
+        return self.expired or self.winner is not None or all(self.cells) or self.revealed or self.lost
 
     def tick(self, now):
-        if not self.solo and not self.finished and now >= self.deadline:
-            self.advance(now, "Time ran out. Turn passed.")
+        if self.finished or self.solo:
+            return
+        if self.round_end is not None and now >= self.round_end:
+            counts = [sum(bool(cell and cell["team"] == team) for cell in self.cells) for team in (0, 1)]
+            self.expired = True
+            if counts[0] != counts[1]:
+                self.winner = counts.index(max(counts))
+                self.scores[self.winner] += 1
+            self.revision += 1
+        elif now >= self.deadline:
+            elapsed_turns = 1 + int((now - self.deadline) // self.turn_seconds)
+            self.turn = (self.turn + elapsed_turns) % 2
+            self.deadline += elapsed_turns * self.turn_seconds
+            self.revision += elapsed_turns
+            self.end_vote = None
+            self.notice = "Time ran out. Turn passed."
 
     def advance(self, now, notice="", keep_vote=False):
         self.turn = 1 - self.turn
-        self.deadline = now + TURN_SECONDS
+        self.deadline = now + self.turn_seconds
         self.revision += 1
         self.notice = notice
         if not keep_vote:
             self.end_vote = None
 
+    @property
+    def series_over(self):
+        return max(self.scores) >= self.best_of // 2 + 1
+
+    def next_round(self, now):
+        return Match(self.names, solo=self.solo, size=self.size, revision=self.revision + 1,
+                     now=now, difficulty=self.difficulty, best_of=self.best_of,
+                     turn_seconds=self.turn_seconds, round_minutes=self.round_minutes,
+                     round_index=0 if self.solo else self.round_index + 1, scores=self.scores)
+
     def vote_to_end(self, team, now):
         if self.end_vote is not None and self.end_vote != team:
-            return Match(self.names, size=self.size, revision=self.revision + 1, now=now)
+            return self.next_round(now)
         self.end_vote = team
         self.advance(now, keep_vote=True)
         return self
@@ -334,6 +415,8 @@ class Match:
                               if all(self.cells[i] and self.cells[i]["team"] == team for i in line)), ())
             if self.line or all(self.cells):
                 self.winner = team if self.line else None
+                if self.line:
+                    self.scores[team] += 1
                 self.end_vote = None
                 self.notice = ""
                 self.revision += 1
@@ -347,6 +430,9 @@ class Match:
                          image=(f"/static/{clue_image(key)}" if Path(__file__).with_name("static").joinpath(clue_image(key)).is_file() else None))
                     for key in keys]
         return dict(rows=clues(self.rows), columns=clues(self.columns), names=self.names, solo=self.solo, team=team,
+                    scores=self.scores, series_over=self.series_over, round_number=self.round_index + 1,
+                    round_remaining=max(0, self.round_end - (monotonic() if now is None else now))
+                    if self.round_end is not None and not self.finished else None,
                     size=self.size, lives=self.lives, lost=self.lost, end_vote=self.end_vote, notice=self.notice,
                     remaining=max(0, self.deadline - (monotonic() if now is None else now))
                     if not self.solo and not self.finished else None,

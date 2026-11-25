@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Imposter | Football IQ</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='design.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='imposter.css') }}">
+  <script src="/static/arabic-labels.js?v=imposter-replay-1"></script>
+  <script src="/static/language.js?v=more-clues-1"></script>
+</head>
+<body class="cup-body">
+<main class="imposter-page">
+  <a class="site-nav" href="{{ url_for('home') }}">Football <span>IQ</span> Game</a>
+  <h1>Imposter</h1>
+  <section class="card imposter-card">
+    <form method="post">
+      <input type="hidden" name="revision" value="{{ game.revision }}">
+      {% if game.phase == "pass" %}
+        <h2>Pass the phone to Player {{ game.player }}</h2>
+        <p>Reveal when only you can see the screen.</p>
+        <button type="submit" name="action" value="reveal">Reveal</button>
+      {% elif game.phase == "role" %}
+        <h2>Player {{ game.player }}</h2>
+        {% if secret %}
+          {% if secret.article %}
+            <img class="imposter-portrait" data-article="{{ secret.article }}" data-portrait="{{ secret.portrait }}" referrerpolicy="no-referrer" hidden alt="">
+          {% else %}
+            <img class="imposter-portrait" src="{{ url_for('static', filename=secret.image) }}" alt="">
+          {% endif %}
+          <strong class="imposter-name" data-secret-name data-ar="{{ secret.ar }}">{{ secret.name }}</strong>
+        {% else %}
+          <strong class="imposter-name">You’re the imposter.</strong>
+          <p>Listen to the clues and blend in.</p>
+        {% endif %}
+        <p>Press Next before passing the phone.</p>
+        <button type="submit" name="action" value="next">Next</button>
+      {% else %}
+        <h2>Player 1, give the first clue.</h2>
+        <p>Take turns giving one clue each.</p>
+        <button type="submit" name="action" value="again">Play again</button>
+      {% endif %}
+    </form>
+  </section>
+</main>
+<script>
+  const portrait = document.querySelector('[data-article]');
+  if (portrait) {
+    const params = new URLSearchParams({action: 'query', titles: portrait.dataset.article,
+      prop: 'pageimages', pithumbsize: '360', piprop: 'thumbnail', redirects: '1', format: 'json', origin: '*'});
+    portrait.onload = () => { portrait.hidden = false; };
+    portrait.onerror = () => {
+      portrait.onerror = null;
+      fetch('https://en.wikipedia.org/w/api.php?' + params)
+      .then(response => response.json())
+      .then(data => {
+        const source = Object.values(data.query.pages)[0]?.thumbnail?.source;
+        if (source) {
+          portrait.src = source;
+        }
+      }).catch(() => {});
+    };
+    portrait.src = portrait.dataset.portrait;
+  }
+  if (window.arabic) {
+    document.querySelectorAll('[data-secret-name]').forEach(name => {
+      name.textContent = name.dataset.ar || name.textContent;
+    });
+  }
+  window.addEventListener('pageshow', event => {
+    if (event.persisted) location.reload();
+  });
+</script>
+</body>
+</html>

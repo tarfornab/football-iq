@@ -20088,5 +20088,4205 @@
       "Sergio Ramos"
     ],
     "id": "nov26-extra-500"
+  },
+  {
+    "id": "add300-001",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Hard",
+    "text": "Who coached Spain at the 2014 World Cup?",
+    "answer": "Vicente del Bosque",
+    "distractors": [
+      "Ottmar Hitzfeld",
+      "Fabio Capello",
+      "Didier Deschamps"
+    ]
+  },
+  {
+    "id": "add300-002",
+    "year": 2020,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Chelsea in 2020/21?",
+    "answer": "Ruben Loftus-Cheek",
+    "distractors": [
+      "Héctor Bellerín",
+      "Memphis Depay",
+      "Virgil van Dijk"
+    ]
+  },
+  {
+    "id": "add300-003",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Jorginho represent at the 2020 UEFA European Championship?",
+    "answer": "Italy",
+    "distractors": [
+      "Spain",
+      "Belgium",
+      "Netherlands"
+    ]
+  },
+  {
+    "id": "add300-004",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Diogo Dalot represent at the 2022 World Cup?",
+    "answer": "Portugal",
+    "distractors": [
+      "Denmark",
+      "Mexico",
+      "United States"
+    ]
+  },
+  {
+    "id": "add300-005",
+    "year": 2010,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Hard",
+    "text": "Who coached England at the 2010 World Cup?",
+    "answer": "Fabio Capello",
+    "distractors": [
+      "Vicente del Bosque",
+      "Ottmar Hitzfeld",
+      "Marcello Lippi"
+    ]
+  },
+  {
+    "id": "add300-006",
+    "year": 2013,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Manchester City in 2013/14?",
+    "answer": "Vincent Kompany",
+    "distractors": [
+      "Sulley Muntari",
+      "Alex",
+      "Rodrigo"
+    ]
+  },
+  {
+    "id": "add300-007",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Anthony Gordon represent at the 2024 UEFA European Championship?",
+    "answer": "England",
+    "distractors": [
+      "Belgium",
+      "France",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-008",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Breel Embolo represent at the 2018 World Cup?",
+    "answer": "Switzerland",
+    "distractors": [
+      "Portugal",
+      "Belgium",
+      "Poland"
+    ]
+  },
+  {
+    "id": "add300-009",
+    "year": 2010,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Hard",
+    "text": "Who coached Spain at the 2010 World Cup?",
+    "answer": "Vicente del Bosque",
+    "distractors": [
+      "Fabio Capello",
+      "Marcello Lippi",
+      "Ottmar Hitzfeld"
+    ]
+  },
+  {
+    "id": "add300-010",
+    "year": 2013,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Napoli in 2013/14?",
+    "answer": "Lorenzo Insigne",
+    "distractors": [
+      "Koke",
+      "Mario Balotelli",
+      "João Moutinho"
+    ]
+  },
+  {
+    "id": "add300-011",
+    "year": 2016,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Gianluigi Buffon represent at the 2016 UEFA European Championship?",
+    "answer": "Italy",
+    "distractors": [
+      "Turkey",
+      "Spain",
+      "Sweden"
+    ]
+  },
+  {
+    "id": "add300-012",
+    "year": 2006,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Michael Ballack represent at the 2006 World Cup?",
+    "answer": "Germany",
+    "distractors": [
+      "Ukraine",
+      "Switzerland",
+      "Czech Republic"
+    ]
+  },
+  {
+    "id": "add300-013",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Hard",
+    "text": "Who coached Switzerland at the 2014 World Cup?",
+    "answer": "Ottmar Hitzfeld",
+    "distractors": [
+      "Vicente del Bosque",
+      "Didier Deschamps",
+      "Louis van Gaal"
+    ]
+  },
+  {
+    "id": "add300-014",
+    "year": 2014,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Roma in 2014/15?",
+    "answer": "Ashley Cole",
+    "distractors": [
+      "Paul Pogba",
+      "Óscar de Marcos",
+      "Lionel Messi"
+    ]
+  },
+  {
+    "id": "add300-015",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Youssouf Fofana represent at the 2024 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Denmark",
+      "Spain",
+      "Italy"
+    ]
+  },
+  {
+    "id": "add300-016",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Hugo Lloris represent at the 2018 World Cup?",
+    "answer": "France",
+    "distractors": [
+      "Spain",
+      "Croatia",
+      "Russia"
+    ]
+  },
+  {
+    "id": "add300-017",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Hard",
+    "text": "Who coached Russia at the 2014 World Cup?",
+    "answer": "Fabio Capello",
+    "distractors": [
+      "Ottmar Hitzfeld",
+      "Didier Deschamps",
+      "Vicente del Bosque"
+    ]
+  },
+  {
+    "id": "add300-018",
+    "year": 2016,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Real Madrid in 2016/17?",
+    "answer": "Álvaro Morata",
+    "distractors": [
+      "Edinson Cavani",
+      "Willian",
+      "Pau Torres"
+    ]
+  },
+  {
+    "id": "add300-019",
+    "year": 2016,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Thomas Vermaelen represent at the 2016 UEFA European Championship?",
+    "answer": "Belgium",
+    "distractors": [
+      "Germany",
+      "Spain",
+      "Portugal"
+    ]
+  },
+  {
+    "id": "add300-020",
+    "year": 2010,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Javier Hernández represent at the 2010 World Cup?",
+    "answer": "Mexico",
+    "distractors": [
+      "United States",
+      "Denmark",
+      "England"
+    ]
+  },
+  {
+    "id": "add300-021",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Hard",
+    "text": "Who coached Spain at the 2022 World Cup?",
+    "answer": "Luis Enrique",
+    "distractors": [
+      "Louis van Gaal",
+      "Didier Deschamps",
+      "Hansi Flick"
+    ]
+  },
+  {
+    "id": "add300-022",
+    "year": 2024,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Manchester City in 2024/25?",
+    "answer": "Bernardo Silva",
+    "distractors": [
+      "Samuel Chukwueze",
+      "Nicola Zalewski",
+      "Richarlison"
+    ]
+  },
+  {
+    "id": "add300-023",
+    "year": 2004,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Fernando Morientes represent at the 2004 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "Sweden",
+      "Denmark",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-024",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Matheus Nunes represent at the 2022 World Cup?",
+    "answer": "Portugal",
+    "distractors": [
+      "France",
+      "Poland",
+      "Switzerland"
+    ]
+  },
+  {
+    "id": "add300-025",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Hard",
+    "text": "Who coached France at the 2022 World Cup?",
+    "answer": "Didier Deschamps",
+    "distractors": [
+      "Hansi Flick",
+      "Louis van Gaal",
+      "Luis Enrique"
+    ]
+  },
+  {
+    "id": "add300-026",
+    "year": 2025,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Napoli in 2025/26?",
+    "answer": "Leonardo Spinazzola",
+    "distractors": [
+      "Sofyan Amrabat",
+      "Mohamed Salah",
+      "Declan Rice"
+    ]
+  },
+  {
+    "id": "add300-027",
+    "year": 1996,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Fabien Barthez represent at the 1996 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Denmark",
+      "Italy",
+      "Russia"
+    ]
+  },
+  {
+    "id": "add300-028",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Youssoufa Moukoko represent at the 2022 World Cup?",
+    "answer": "Germany",
+    "distractors": [
+      "Poland",
+      "Netherlands",
+      "England"
+    ]
+  },
+  {
+    "id": "add300-029",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Hard",
+    "text": "Who coached Netherlands at the 2022 World Cup?",
+    "answer": "Louis van Gaal",
+    "distractors": [
+      "Didier Deschamps",
+      "Hansi Flick",
+      "Luis Enrique"
+    ]
+  },
+  {
+    "id": "add300-030",
+    "year": 2025,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Juventus in 2025/26?",
+    "answer": "Jérémie Boga",
+    "distractors": [
+      "Luis Suárez",
+      "Gonzalo García",
+      "Jan Oblak"
+    ]
+  },
+  {
+    "id": "add300-031",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did İlkay Gündoğan represent at the 2020 UEFA European Championship?",
+    "answer": "Germany",
+    "distractors": [
+      "Turkey",
+      "France",
+      "Sweden"
+    ]
+  },
+  {
+    "id": "add300-032",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Patrice Evra represent at the 2014 World Cup?",
+    "answer": "France",
+    "distractors": [
+      "Russia",
+      "United States",
+      "Netherlands"
+    ]
+  },
+  {
+    "id": "add300-033",
+    "year": 2010,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Hard",
+    "text": "Who coached Italy at the 2010 World Cup?",
+    "answer": "Marcello Lippi",
+    "distractors": [
+      "Fabio Capello",
+      "Vicente del Bosque",
+      "Ottmar Hitzfeld"
+    ]
+  },
+  {
+    "id": "add300-034",
+    "year": 2012,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Napoli in 2012/13?",
+    "answer": "Lorenzo Insigne",
+    "distractors": [
+      "Marquinhos",
+      "Mathieu Flamini",
+      "Enzo Pérez"
+    ]
+  },
+  {
+    "id": "add300-035",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Quincy Promes represent at the 2020 UEFA European Championship?",
+    "answer": "Netherlands",
+    "distractors": [
+      "Germany",
+      "Russia",
+      "Portugal"
+    ]
+  },
+  {
+    "id": "add300-036",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Ardon Jashari represent at the 2022 World Cup?",
+    "answer": "Switzerland",
+    "distractors": [
+      "Denmark",
+      "Netherlands",
+      "Canada"
+    ]
+  },
+  {
+    "id": "add300-037",
+    "year": 2010,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Hard",
+    "text": "Who coached Switzerland at the 2010 World Cup?",
+    "answer": "Ottmar Hitzfeld",
+    "distractors": [
+      "Fabio Capello",
+      "Vicente del Bosque",
+      "Marcello Lippi"
+    ]
+  },
+  {
+    "id": "add300-038",
+    "year": 2020,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Manchester United in 2020/21?",
+    "answer": "Marcus Rashford",
+    "distractors": [
+      "Claudio Bravo",
+      "Danilo Pereira",
+      "Eric Dier"
+    ]
+  },
+  {
+    "id": "add300-039",
+    "year": 2004,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Robert Pirès represent at the 2004 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Germany",
+      "England",
+      "Denmark"
+    ]
+  },
+  {
+    "id": "add300-040",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Manuel Akanji represent at the 2018 World Cup?",
+    "answer": "Switzerland",
+    "distractors": [
+      "Portugal",
+      "England",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-041",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Hard",
+    "text": "Who coached Netherlands at the 2014 World Cup?",
+    "answer": "Louis van Gaal",
+    "distractors": [
+      "Ottmar Hitzfeld",
+      "Fabio Capello",
+      "Didier Deschamps"
+    ]
+  },
+  {
+    "id": "add300-042",
+    "year": 2019,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Manchester United in 2019/20?",
+    "answer": "Paul Pogba",
+    "distractors": [
+      "Fernando Llorente",
+      "Serge Aurier",
+      "Rafael Leão"
+    ]
+  },
+  {
+    "id": "add300-043",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Olivier Giroud represent at the 2024 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Belgium",
+      "Denmark",
+      "Netherlands"
+    ]
+  },
+  {
+    "id": "add300-044",
+    "year": 2010,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Franck Ribéry represent at the 2010 World Cup?",
+    "answer": "France",
+    "distractors": [
+      "Portugal",
+      "Greece",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-045",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Hard",
+    "text": "Who coached France at the 2014 World Cup?",
+    "answer": "Didier Deschamps",
+    "distractors": [
+      "Vicente del Bosque",
+      "Fabio Capello",
+      "Ottmar Hitzfeld"
+    ]
+  },
+  {
+    "id": "add300-046",
+    "year": 2023,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for AC Milan in 2023/24?",
+    "answer": "Samuel Chukwueze",
+    "distractors": [
+      "Gonzalo García",
+      "Federico Valverde",
+      "David Raya"
+    ]
+  },
+  {
+    "id": "add300-047",
+    "year": 2000,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Gianluca Zambrotta represent at the 2000 UEFA European Championship?",
+    "answer": "Italy",
+    "distractors": [
+      "Sweden",
+      "Germany",
+      "Turkey"
+    ]
+  },
+  {
+    "id": "add300-048",
+    "year": 1998,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Raúl represent at the 1998 World Cup?",
+    "answer": "Spain",
+    "distractors": [
+      "Netherlands",
+      "Austria",
+      "Croatia"
+    ]
+  },
+  {
+    "id": "add300-049",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Hard",
+    "text": "Who coached Germany at the 2022 World Cup?",
+    "answer": "Hansi Flick",
+    "distractors": [
+      "Louis van Gaal",
+      "Didier Deschamps",
+      "Luis Enrique"
+    ]
+  },
+  {
+    "id": "add300-050",
+    "year": 2017,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Chelsea in 2017/18?",
+    "answer": "Willy Caballero",
+    "distractors": [
+      "Paul Pogba",
+      "Bruno Fernandes",
+      "Thiago Motta"
+    ]
+  },
+  {
+    "id": "add300-051",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Chris Führich represent at the 2024 UEFA European Championship?",
+    "answer": "Germany",
+    "distractors": [
+      "Netherlands",
+      "Spain",
+      "England"
+    ]
+  },
+  {
+    "id": "add300-052",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Raphaël Varane represent at the 2014 World Cup?",
+    "answer": "France",
+    "distractors": [
+      "Belgium",
+      "Netherlands",
+      "Italy"
+    ]
+  },
+  {
+    "id": "add300-053",
+    "year": 2022,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Athletic Club in 2022/23?",
+    "answer": "Nico Williams",
+    "distractors": [
+      "Danny Ings",
+      "Toni Kroos",
+      "Leonardo Spinazzola"
+    ]
+  },
+  {
+    "id": "add300-054",
+    "year": 1992,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Andreas Möller represent at the 1992 UEFA European Championship?",
+    "answer": "Germany",
+    "distractors": [
+      "Sweden",
+      "Netherlands",
+      "Denmark"
+    ]
+  },
+  {
+    "id": "add300-055",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Thomas Müller represent at the 2018 World Cup?",
+    "answer": "Germany",
+    "distractors": [
+      "Mexico",
+      "England",
+      "Denmark"
+    ]
+  },
+  {
+    "id": "add300-056",
+    "year": 2020,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Sevilla in 2020/21?",
+    "answer": "Jesús Navas",
+    "distractors": [
+      "Ante Rebić",
+      "Pierre-Emerick Aubameyang",
+      "Axel Disasi"
+    ]
+  },
+  {
+    "id": "add300-057",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Kasper Dolberg represent at the 2020 UEFA European Championship?",
+    "answer": "Denmark",
+    "distractors": [
+      "Russia",
+      "Italy",
+      "Netherlands"
+    ]
+  },
+  {
+    "id": "add300-058",
+    "year": 2010,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Lukas Podolski represent at the 2010 World Cup?",
+    "answer": "Germany",
+    "distractors": [
+      "Mexico",
+      "United States",
+      "Denmark"
+    ]
+  },
+  {
+    "id": "add300-059",
+    "year": 2013,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Chelsea in 2013/14?",
+    "answer": "Romelu Lukaku",
+    "distractors": [
+      "Goran Pandev",
+      "Fernandinho",
+      "Marco Verratti"
+    ]
+  },
+  {
+    "id": "add300-060",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Giovanni Di Lorenzo represent at the 2020 UEFA European Championship?",
+    "answer": "Italy",
+    "distractors": [
+      "England",
+      "Germany",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-061",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did N’Golo Kanté represent at the 2018 World Cup?",
+    "answer": "France",
+    "distractors": [
+      "Sweden",
+      "Spain",
+      "Portugal"
+    ]
+  },
+  {
+    "id": "add300-062",
+    "year": 2015,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Chelsea in 2015/16?",
+    "answer": "Eden Hazard",
+    "distractors": [
+      "Eric Bailly",
+      "Diego Godín",
+      "Joe Gomez"
+    ]
+  },
+  {
+    "id": "add300-063",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Bart Verbruggen represent at the 2024 UEFA European Championship?",
+    "answer": "Netherlands",
+    "distractors": [
+      "France",
+      "Belgium",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-064",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Thiago Cionek represent at the 2018 World Cup?",
+    "answer": "Poland",
+    "distractors": [
+      "France",
+      "Sweden",
+      "England"
+    ]
+  },
+  {
+    "id": "add300-065",
+    "year": 2015,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Arsenal in 2015/16?",
+    "answer": "Mathieu Debuchy",
+    "distractors": [
+      "Jesse Lingard",
+      "Edinson Cavani",
+      "Germán Pezzella"
+    ]
+  },
+  {
+    "id": "add300-066",
+    "year": 2000,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Massimo Ambrosini represent at the 2000 UEFA European Championship?",
+    "answer": "Italy",
+    "distractors": [
+      "Denmark",
+      "Sweden",
+      "England"
+    ]
+  },
+  {
+    "id": "add300-067",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Fabian Schär represent at the 2018 World Cup?",
+    "answer": "Switzerland",
+    "distractors": [
+      "Belgium",
+      "Croatia",
+      "Portugal"
+    ]
+  },
+  {
+    "id": "add300-068",
+    "year": 2012,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Arsenal in 2012/13?",
+    "answer": "Bacary Sagna",
+    "distractors": [
+      "Salvatore Sirigu",
+      "Mattia Destro",
+      "Karim Benzema"
+    ]
+  },
+  {
+    "id": "add300-069",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did João Félix represent at the 2020 UEFA European Championship?",
+    "answer": "Portugal",
+    "distractors": [
+      "Belgium",
+      "Turkey",
+      "Russia"
+    ]
+  },
+  {
+    "id": "add300-070",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Pepe represent at the 2018 World Cup?",
+    "answer": "Portugal",
+    "distractors": [
+      "Switzerland",
+      "Poland",
+      "Croatia"
+    ]
+  },
+  {
+    "id": "add300-071",
+    "year": 2016,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Manchester City in 2016/17?",
+    "answer": "Kelechi Iheanacho",
+    "distractors": [
+      "Danny Rose",
+      "Zlatan Ibrahimović",
+      "Jordi Alba"
+    ]
+  },
+  {
+    "id": "add300-072",
+    "year": 2000,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Raúl represent at the 2000 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "Sweden",
+      "Portugal",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-073",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Jesse Lingard represent at the 2018 World Cup?",
+    "answer": "England",
+    "distractors": [
+      "Switzerland",
+      "Spain",
+      "Costa Rica"
+    ]
+  },
+  {
+    "id": "add300-074",
+    "year": 2015,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Lyon in 2015/16?",
+    "answer": "Alexandre Lacazette",
+    "distractors": [
+      "Juan Cuadrado",
+      "Antonio Rüdiger",
+      "Alex Oxlade-Chamberlain"
+    ]
+  },
+  {
+    "id": "add300-075",
+    "year": 1996,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Peter Schmeichel represent at the 1996 UEFA European Championship?",
+    "answer": "Denmark",
+    "distractors": [
+      "England",
+      "France",
+      "Portugal"
+    ]
+  },
+  {
+    "id": "add300-076",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Alphonso Davies represent at the 2022 World Cup?",
+    "answer": "Canada",
+    "distractors": [
+      "France",
+      "Germany",
+      "Belgium"
+    ]
+  },
+  {
+    "id": "add300-077",
+    "year": 2018,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Liverpool in 2018/19?",
+    "answer": "James Milner",
+    "distractors": [
+      "Marcelo Brozović",
+      "Bertrand Traoré",
+      "Franck Kessié"
+    ]
+  },
+  {
+    "id": "add300-078",
+    "year": 2012,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did David Silva represent at the 2012 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "Denmark",
+      "Sweden",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-079",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Danny Welbeck represent at the 2014 World Cup?",
+    "answer": "England",
+    "distractors": [
+      "United States",
+      "Croatia",
+      "Mexico"
+    ]
+  },
+  {
+    "id": "add300-080",
+    "year": 2020,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Aston Villa in 2020/21?",
+    "answer": "Matty Cash",
+    "distractors": [
+      "João Cancelo",
+      "Papu Gómez",
+      "Edinson Cavani"
+    ]
+  },
+  {
+    "id": "add300-081",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Vitinha represent at the 2024 UEFA European Championship?",
+    "answer": "Portugal",
+    "distractors": [
+      "Italy",
+      "Spain",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-082",
+    "year": 1998,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Youri Djorkaeff represent at the 1998 World Cup?",
+    "answer": "France",
+    "distractors": [
+      "Belgium",
+      "Croatia",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-083",
+    "year": 2019,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Marseille in 2019/20?",
+    "answer": "Steve Mandanda",
+    "distractors": [
+      "Fabio Borini",
+      "Billy Gilmour",
+      "Casemiro"
+    ]
+  },
+  {
+    "id": "add300-084",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Trent Alexander-Arnold represent at the 2024 UEFA European Championship?",
+    "answer": "England",
+    "distractors": [
+      "Portugal",
+      "Netherlands",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-085",
+    "year": 2006,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Steven Gerrard represent at the 2006 World Cup?",
+    "answer": "England",
+    "distractors": [
+      "Ukraine",
+      "Netherlands",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-086",
+    "year": 2015,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for AC Milan in 2015/16?",
+    "answer": "Mattia De Sciglio",
+    "distractors": [
+      "Marouane Fellaini",
+      "Alexis Sánchez",
+      "Pedro"
+    ]
+  },
+  {
+    "id": "add300-087",
+    "year": 2000,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Jon Dahl Tomasson represent at the 2000 UEFA European Championship?",
+    "answer": "Denmark",
+    "distractors": [
+      "Germany",
+      "Belgium",
+      "Netherlands"
+    ]
+  },
+  {
+    "id": "add300-088",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Romelu Lukaku represent at the 2022 World Cup?",
+    "answer": "Belgium",
+    "distractors": [
+      "Switzerland",
+      "Denmark",
+      "Canada"
+    ]
+  },
+  {
+    "id": "add300-089",
+    "year": 2018,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Athletic Club in 2018/19?",
+    "answer": "Iker Muniain",
+    "distractors": [
+      "Joaquín",
+      "Naby Keïta",
+      "Miralem Pjanić"
+    ]
+  },
+  {
+    "id": "add300-090",
+    "year": 2008,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Alberto Aquilani represent at the 2008 UEFA European Championship?",
+    "answer": "Italy",
+    "distractors": [
+      "Netherlands",
+      "Sweden",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-091",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did David Silva represent at the 2014 World Cup?",
+    "answer": "Spain",
+    "distractors": [
+      "Portugal",
+      "Switzerland",
+      "United States"
+    ]
+  },
+  {
+    "id": "add300-092",
+    "year": 2017,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Napoli in 2017/18?",
+    "answer": "Jorginho",
+    "distractors": [
+      "Sergio Busquets",
+      "Ousmane Dembélé",
+      "Yannick Carrasco"
+    ]
+  },
+  {
+    "id": "add300-093",
+    "year": 2008,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Lassana Diarra represent at the 2008 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Portugal",
+      "Germany",
+      "Netherlands"
+    ]
+  },
+  {
+    "id": "add300-094",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Ousmane Dembélé represent at the 2018 World Cup?",
+    "answer": "France",
+    "distractors": [
+      "Sweden",
+      "Russia",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-095",
+    "year": 2024,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Arsenal in 2024/25?",
+    "answer": "Gabriel Jesus",
+    "distractors": [
+      "Gonzalo Montiel",
+      "Mika Biereth",
+      "Djibril Sow"
+    ]
+  },
+  {
+    "id": "add300-096",
+    "year": 1996,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Zinédine Zidane represent at the 1996 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Portugal",
+      "England",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-097",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Leander Dendoncker represent at the 2022 World Cup?",
+    "answer": "Belgium",
+    "distractors": [
+      "Denmark",
+      "Poland",
+      "Canada"
+    ]
+  },
+  {
+    "id": "add300-098",
+    "year": 2019,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Lyon in 2019/20?",
+    "answer": "Memphis Depay",
+    "distractors": [
+      "James Rodríguez",
+      "Stanislav Lobotka",
+      "Thilo Kehrer"
+    ]
+  },
+  {
+    "id": "add300-099",
+    "year": 2008,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Grégory Coupet represent at the 2008 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Italy",
+      "Germany",
+      "Sweden"
+    ]
+  },
+  {
+    "id": "add300-100",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Djibril Sidibé represent at the 2018 World Cup?",
+    "answer": "France",
+    "distractors": [
+      "Poland",
+      "Sweden",
+      "Mexico"
+    ]
+  },
+  {
+    "id": "add300-101",
+    "year": 2022,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Marseille in 2022/23?",
+    "answer": "Cédric Bakambu",
+    "distractors": [
+      "Bryan Cristante",
+      "Marco Verratti",
+      "Charles De Ketelaere"
+    ]
+  },
+  {
+    "id": "add300-102",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Benjamin Pavard represent at the 2024 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Spain",
+      "Turkey",
+      "Belgium"
+    ]
+  },
+  {
+    "id": "add300-103",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Axel Disasi represent at the 2022 World Cup?",
+    "answer": "France",
+    "distractors": [
+      "Croatia",
+      "Portugal",
+      "England"
+    ]
+  },
+  {
+    "id": "add300-104",
+    "year": 2022,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Monaco in 2022/23?",
+    "answer": "Takumi Minamino",
+    "distractors": [
+      "Gavi",
+      "Billy Gilmour",
+      "Ryan Gravenberch"
+    ]
+  },
+  {
+    "id": "add300-105",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Alexander Isak represent at the 2020 UEFA European Championship?",
+    "answer": "Sweden",
+    "distractors": [
+      "Spain",
+      "Germany",
+      "Denmark"
+    ]
+  },
+  {
+    "id": "add300-106",
+    "year": 2006,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Luis García represent at the 2006 World Cup?",
+    "answer": "Spain",
+    "distractors": [
+      "England",
+      "Poland",
+      "Switzerland"
+    ]
+  },
+  {
+    "id": "add300-107",
+    "year": 2018,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Real Sociedad in 2018/19?",
+    "answer": "Martín Zubimendi",
+    "distractors": [
+      "Gerard Moreno",
+      "Lautaro Martínez",
+      "Leandro Paredes"
+    ]
+  },
+  {
+    "id": "add300-108",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Dani Olmo represent at the 2020 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "Turkey",
+      "France",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-109",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Ricardo Quaresma represent at the 2018 World Cup?",
+    "answer": "Portugal",
+    "distractors": [
+      "Denmark",
+      "Spain",
+      "Poland"
+    ]
+  },
+  {
+    "id": "add300-110",
+    "year": 2019,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for AC Milan in 2019/20?",
+    "answer": "Lucas Paquetá",
+    "distractors": [
+      "Luke Shaw",
+      "Yeray Álvarez",
+      "Pedro"
+    ]
+  },
+  {
+    "id": "add300-111",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Pedri represent at the 2020 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "Netherlands",
+      "England",
+      "Sweden"
+    ]
+  },
+  {
+    "id": "add300-112",
+    "year": 2002,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Luis Enrique represent at the 2002 World Cup?",
+    "answer": "Spain",
+    "distractors": [
+      "Costa Rica",
+      "Sweden",
+      "Croatia"
+    ]
+  },
+  {
+    "id": "add300-113",
+    "year": 2020,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Juventus in 2020/21?",
+    "answer": "Giorgio Chiellini",
+    "distractors": [
+      "Gabriel Jesus",
+      "Rafael Leão",
+      "Ross Barkley"
+    ]
+  },
+  {
+    "id": "add300-114",
+    "year": 2008,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Rui Patrício represent at the 2008 UEFA European Championship?",
+    "answer": "Portugal",
+    "distractors": [
+      "Netherlands",
+      "Germany",
+      "Sweden"
+    ]
+  },
+  {
+    "id": "add300-115",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Mario Mandžukić represent at the 2014 World Cup?",
+    "answer": "Croatia",
+    "distractors": [
+      "France",
+      "Germany",
+      "Netherlands"
+    ]
+  },
+  {
+    "id": "add300-116",
+    "year": 2012,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Barcelona in 2012/13?",
+    "answer": "Marc Bartra",
+    "distractors": [
+      "Cristiano Ronaldo",
+      "Fabian Delph",
+      "Nigel de Jong"
+    ]
+  },
+  {
+    "id": "add300-117",
+    "year": 2016,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did André Schürrle represent at the 2016 UEFA European Championship?",
+    "answer": "Germany",
+    "distractors": [
+      "France",
+      "Sweden",
+      "Turkey"
+    ]
+  },
+  {
+    "id": "add300-118",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Ricardo Rodríguez represent at the 2014 World Cup?",
+    "answer": "Switzerland",
+    "distractors": [
+      "Netherlands",
+      "Greece",
+      "United States"
+    ]
+  },
+  {
+    "id": "add300-119",
+    "year": 2020,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Athletic Club in 2020/21?",
+    "answer": "Raúl García",
+    "distractors": [
+      "Dele Alli",
+      "Marc Bartra",
+      "Ashley Young"
+    ]
+  },
+  {
+    "id": "add300-120",
+    "year": 2000,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Alessandro Del Piero represent at the 2000 UEFA European Championship?",
+    "answer": "Italy",
+    "distractors": [
+      "Netherlands",
+      "Turkey",
+      "Portugal"
+    ]
+  },
+  {
+    "id": "add300-121",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Jordi Alba represent at the 2022 World Cup?",
+    "answer": "Spain",
+    "distractors": [
+      "England",
+      "Croatia",
+      "Poland"
+    ]
+  },
+  {
+    "id": "add300-122",
+    "year": 2016,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Lille in 2016/17?",
+    "answer": "Mike Maignan",
+    "distractors": [
+      "Jordi Alba",
+      "Giorgio Chiellini",
+      "Theo Walcott"
+    ]
+  },
+  {
+    "id": "add300-123",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Álex Grimaldo represent at the 2024 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "Portugal",
+      "Turkey",
+      "Italy"
+    ]
+  },
+  {
+    "id": "add300-124",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Josip Drmic represent at the 2014 World Cup?",
+    "answer": "Switzerland",
+    "distractors": [
+      "Croatia",
+      "France",
+      "Italy"
+    ]
+  },
+  {
+    "id": "add300-125",
+    "year": 2024,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Athletic Club in 2024/25?",
+    "answer": "Ander Herrera",
+    "distractors": [
+      "Saïd Benrahma",
+      "Dominik Szoboszlai",
+      "Amadou Onana"
+    ]
+  },
+  {
+    "id": "add300-126",
+    "year": 2004,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Steven Gerrard represent at the 2004 UEFA European Championship?",
+    "answer": "England",
+    "distractors": [
+      "Netherlands",
+      "Spain",
+      "Sweden"
+    ]
+  },
+  {
+    "id": "add300-127",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Pau Torres represent at the 2022 World Cup?",
+    "answer": "Spain",
+    "distractors": [
+      "Portugal",
+      "England",
+      "Poland"
+    ]
+  },
+  {
+    "id": "add300-128",
+    "year": 2018,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Manchester City in 2018/19?",
+    "answer": "Vincent Kompany",
+    "distractors": [
+      "Bertrand Traoré",
+      "Juan Cuadrado",
+      "Rafinha"
+    ]
+  },
+  {
+    "id": "add300-129",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Jordan Pickford represent at the 2024 UEFA European Championship?",
+    "answer": "England",
+    "distractors": [
+      "Netherlands",
+      "Denmark",
+      "Belgium"
+    ]
+  },
+  {
+    "id": "add300-130",
+    "year": 2010,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did David Villa represent at the 2010 World Cup?",
+    "answer": "Spain",
+    "distractors": [
+      "Portugal",
+      "Switzerland",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-131",
+    "year": 2025,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Villarreal in 2025/26?",
+    "answer": "Gerard Moreno",
+    "distractors": [
+      "Randal Kolo Muani",
+      "Leny Yoro",
+      "Alejandro Balde"
+    ]
+  },
+  {
+    "id": "add300-132",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Youri Tielemans represent at the 2024 UEFA European Championship?",
+    "answer": "Belgium",
+    "distractors": [
+      "Denmark",
+      "Netherlands",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-133",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Eric Dier represent at the 2022 World Cup?",
+    "answer": "England",
+    "distractors": [
+      "United States",
+      "Poland",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-134",
+    "year": 2022,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Real Sociedad in 2022/23?",
+    "answer": "Alexander Isak",
+    "distractors": [
+      "Darwin Núñez",
+      "Cédric Soares",
+      "Mohamed Salah"
+    ]
+  },
+  {
+    "id": "add300-135",
+    "year": 1992,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Alan Shearer represent at the 1992 UEFA European Championship?",
+    "answer": "England",
+    "distractors": [
+      "Netherlands",
+      "Denmark",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-136",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Marcus Rashford represent at the 2018 World Cup?",
+    "answer": "England",
+    "distractors": [
+      "Portugal",
+      "Croatia",
+      "Denmark"
+    ]
+  },
+  {
+    "id": "add300-137",
+    "year": 2024,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Benfica in 2024/25?",
+    "answer": "João Mário",
+    "distractors": [
+      "Tijjani Reijnders",
+      "Ayoze Pérez",
+      "Hakan Çalhanoğlu"
+    ]
+  },
+  {
+    "id": "add300-138",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Leandro Trossard represent at the 2020 UEFA European Championship?",
+    "answer": "Belgium",
+    "distractors": [
+      "Turkey",
+      "Sweden",
+      "Italy"
+    ]
+  },
+  {
+    "id": "add300-139",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Raheem Sterling represent at the 2022 World Cup?",
+    "answer": "England",
+    "distractors": [
+      "Mexico",
+      "Spain",
+      "Poland"
+    ]
+  },
+  {
+    "id": "add300-140",
+    "year": 2018,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Sevilla in 2018/19?",
+    "answer": "Éver Banega",
+    "distractors": [
+      "Moussa Diaby",
+      "Nélson Semedo",
+      "Dejan Lovren"
+    ]
+  },
+  {
+    "id": "add300-141",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Axel Witsel represent at the 2024 UEFA European Championship?",
+    "answer": "Belgium",
+    "distractors": [
+      "Netherlands",
+      "Portugal",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-142",
+    "year": 2002,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Paolo Maldini represent at the 2002 World Cup?",
+    "answer": "Italy",
+    "distractors": [
+      "Denmark",
+      "Costa Rica",
+      "United States"
+    ]
+  },
+  {
+    "id": "add300-143",
+    "year": 2012,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Athletic Club in 2012/13?",
+    "answer": "Ander Herrera",
+    "distractors": [
+      "Alex Sandro",
+      "Glen Johnson",
+      "Rafael van der Vaart"
+    ]
+  },
+  {
+    "id": "add300-144",
+    "year": 2012,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Lukas Podolski represent at the 2012 UEFA European Championship?",
+    "answer": "Germany",
+    "distractors": [
+      "Sweden",
+      "Denmark",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-145",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Timo Werner represent at the 2018 World Cup?",
+    "answer": "Germany",
+    "distractors": [
+      "Poland",
+      "Costa Rica",
+      "England"
+    ]
+  },
+  {
+    "id": "add300-146",
+    "year": 2016,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Monaco in 2016/17?",
+    "answer": "Benjamin Mendy",
+    "distractors": [
+      "Gianluigi Buffon",
+      "Leandro Paredes",
+      "Corentin Tolisso"
+    ]
+  },
+  {
+    "id": "add300-147",
+    "year": 2004,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Fernando Torres represent at the 2004 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "England",
+      "Russia",
+      "Italy"
+    ]
+  },
+  {
+    "id": "add300-148",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Thorgan Hazard represent at the 2022 World Cup?",
+    "answer": "Belgium",
+    "distractors": [
+      "France",
+      "Germany",
+      "Denmark"
+    ]
+  },
+  {
+    "id": "add300-149",
+    "year": 2025,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Inter Milan in 2025/26?",
+    "answer": "Stefan de Vrij",
+    "distractors": [
+      "Brennan Johnson",
+      "Thiago Almada",
+      "Ardon Jashari"
+    ]
+  },
+  {
+    "id": "add300-150",
+    "year": 2016,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Mattia De Sciglio represent at the 2016 UEFA European Championship?",
+    "answer": "Italy",
+    "distractors": [
+      "France",
+      "Germany",
+      "Turkey"
+    ]
+  },
+  {
+    "id": "add300-151",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Łukasz Piszczek represent at the 2018 World Cup?",
+    "answer": "Poland",
+    "distractors": [
+      "Switzerland",
+      "Russia",
+      "Belgium"
+    ]
+  },
+  {
+    "id": "add300-152",
+    "year": 2014,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Sevilla in 2014/15?",
+    "answer": "Federico Fazio",
+    "distractors": [
+      "Layvin Kurzawa",
+      "Rafinha",
+      "Raheem Sterling"
+    ]
+  },
+  {
+    "id": "add300-153",
+    "year": 2016,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did César Azpilicueta represent at the 2016 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "Portugal",
+      "Italy",
+      "Belgium"
+    ]
+  },
+  {
+    "id": "add300-154",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Jan Bednarek represent at the 2022 World Cup?",
+    "answer": "Poland",
+    "distractors": [
+      "Wales",
+      "Mexico",
+      "Croatia"
+    ]
+  },
+  {
+    "id": "add300-155",
+    "year": 2022,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Villarreal in 2022/23?",
+    "answer": "Raúl Albiol",
+    "distractors": [
+      "Divock Origi",
+      "Diogo Jota",
+      "David Alaba"
+    ]
+  },
+  {
+    "id": "add300-156",
+    "year": 1996,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Fernando Hierro represent at the 1996 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "England",
+      "Netherlands",
+      "Turkey"
+    ]
+  },
+  {
+    "id": "add300-157",
+    "year": 2006,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Florent Malouda represent at the 2006 World Cup?",
+    "answer": "France",
+    "distractors": [
+      "Switzerland",
+      "United States",
+      "Sweden"
+    ]
+  },
+  {
+    "id": "add300-158",
+    "year": 2021,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Real Madrid in 2021/22?",
+    "answer": "Éder Militão",
+    "distractors": [
+      "Erik Lamela",
+      "Óscar de Marcos",
+      "Bukayo Saka"
+    ]
+  },
+  {
+    "id": "add300-159",
+    "year": 2012,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Wesley Sneijder represent at the 2012 UEFA European Championship?",
+    "answer": "Netherlands",
+    "distractors": [
+      "England",
+      "Denmark",
+      "Russia"
+    ]
+  },
+  {
+    "id": "add300-160",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Kenneth Taylor represent at the 2022 World Cup?",
+    "answer": "Netherlands",
+    "distractors": [
+      "Denmark",
+      "Spain",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-161",
+    "year": 2013,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Real Madrid in 2013/14?",
+    "answer": "Iker Casillas",
+    "distractors": [
+      "Theo Walcott",
+      "Thomas Vermaelen",
+      "Goran Pandev"
+    ]
+  },
+  {
+    "id": "add300-162",
+    "year": 2016,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Toby Alderweireld represent at the 2016 UEFA European Championship?",
+    "answer": "Belgium",
+    "distractors": [
+      "Portugal",
+      "Germany",
+      "England"
+    ]
+  },
+  {
+    "id": "add300-163",
+    "year": 2006,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Andrea Barzagli represent at the 2006 World Cup?",
+    "answer": "Italy",
+    "distractors": [
+      "Germany",
+      "Trinidad and Tobago",
+      "Croatia"
+    ]
+  },
+  {
+    "id": "add300-164",
+    "year": 2024,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Lyon in 2024/25?",
+    "answer": "Thiago Almada",
+    "distractors": [
+      "Leonardo Spinazzola",
+      "Noussair Mazraoui",
+      "Youssouf Fofana"
+    ]
+  },
+  {
+    "id": "add300-165",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Karim Benzema represent at the 2020 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Netherlands",
+      "Belgium",
+      "Italy"
+    ]
+  },
+  {
+    "id": "add300-166",
+    "year": 2002,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Rio Ferdinand represent at the 2002 World Cup?",
+    "answer": "England",
+    "distractors": [
+      "United States",
+      "Mexico",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-167",
+    "year": 2017,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Liverpool in 2017/18?",
+    "answer": "Emre Can",
+    "distractors": [
+      "Aaron Ramsey",
+      "Diego Costa",
+      "Ángel Correa"
+    ]
+  },
+  {
+    "id": "add300-168",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Harry Kane represent at the 2024 UEFA European Championship?",
+    "answer": "England",
+    "distractors": [
+      "Belgium",
+      "Portugal",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-169",
+    "year": 2002,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Davor Šuker represent at the 2002 World Cup?",
+    "answer": "Croatia",
+    "distractors": [
+      "Italy",
+      "Belgium",
+      "Costa Rica"
+    ]
+  },
+  {
+    "id": "add300-170",
+    "year": 2014,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Chelsea in 2014/15?",
+    "answer": "John Terry",
+    "distractors": [
+      "Harry Winks",
+      "Antonio Valencia",
+      "Harry Kane"
+    ]
+  },
+  {
+    "id": "add300-171",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Yussuf Poulsen represent at the 2020 UEFA European Championship?",
+    "answer": "Denmark",
+    "distractors": [
+      "Belgium",
+      "Portugal",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-172",
+    "year": 1998,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Fabien Barthez represent at the 1998 World Cup?",
+    "answer": "France",
+    "distractors": [
+      "Germany",
+      "Austria",
+      "Italy"
+    ]
+  },
+  {
+    "id": "add300-173",
+    "year": 2012,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Roma in 2012/13?",
+    "answer": "Marquinhos",
+    "distractors": [
+      "Robin van Persie",
+      "Arturo Vidal",
+      "Harry Kane"
+    ]
+  },
+  {
+    "id": "add300-174",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Eduardo Camavinga represent at the 2024 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Spain",
+      "Netherlands",
+      "Belgium"
+    ]
+  },
+  {
+    "id": "add300-175",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Youri Tielemans represent at the 2018 World Cup?",
+    "answer": "Belgium",
+    "distractors": [
+      "Costa Rica",
+      "Russia",
+      "Sweden"
+    ]
+  },
+  {
+    "id": "add300-176",
+    "year": 2020,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Porto in 2020/21?",
+    "answer": "Pepe",
+    "distractors": [
+      "Gerónimo Rulli",
+      "Anthony Elanga",
+      "Theo Hernández"
+    ]
+  },
+  {
+    "id": "add300-177",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Leon Goretzka represent at the 2020 UEFA European Championship?",
+    "answer": "Germany",
+    "distractors": [
+      "Belgium",
+      "Denmark",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-178",
+    "year": 2002,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Ashley Cole represent at the 2002 World Cup?",
+    "answer": "England",
+    "distractors": [
+      "Italy",
+      "Costa Rica",
+      "United States"
+    ]
+  },
+  {
+    "id": "add300-179",
+    "year": 2021,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Sporting CP in 2021/22?",
+    "answer": "Nuno Mendes",
+    "distractors": [
+      "Denzel Dumfries",
+      "Rafa Silva",
+      "Ciro Immobile"
+    ]
+  },
+  {
+    "id": "add300-180",
+    "year": 2004,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Ashley Cole represent at the 2004 UEFA European Championship?",
+    "answer": "England",
+    "distractors": [
+      "Italy",
+      "Denmark",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-181",
+    "year": 1990,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Franco Baresi represent at the 1990 World Cup?",
+    "answer": "Italy",
+    "distractors": [
+      "Sweden",
+      "Scotland",
+      "Romania"
+    ]
+  },
+  {
+    "id": "add300-182",
+    "year": 2019,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Atlético Madrid in 2019/20?",
+    "answer": "Diego Costa",
+    "distractors": [
+      "Aaron Ramsey",
+      "Harry Maguire",
+      "Ederson"
+    ]
+  },
+  {
+    "id": "add300-183",
+    "year": 2000,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Gaizka Mendieta represent at the 2000 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "Belgium",
+      "Turkey",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-184",
+    "year": 2006,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Gianluca Zambrotta represent at the 2006 World Cup?",
+    "answer": "Italy",
+    "distractors": [
+      "Costa Rica",
+      "Croatia",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-185",
+    "year": 2016,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Real Betis in 2016/17?",
+    "answer": "Fabián Ruiz",
+    "distractors": [
+      "Daniel Carvajal",
+      "Presnel Kimpembe",
+      "Marcus Rashford"
+    ]
+  },
+  {
+    "id": "add300-186",
+    "year": 2016,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Yannick Carrasco represent at the 2016 UEFA European Championship?",
+    "answer": "Belgium",
+    "distractors": [
+      "France",
+      "Italy",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-187",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Granit Xhaka represent at the 2022 World Cup?",
+    "answer": "Switzerland",
+    "distractors": [
+      "Netherlands",
+      "Costa Rica",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-188",
+    "year": 2014,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Manchester City in 2014/15?",
+    "answer": "Sergio Agüero",
+    "distractors": [
+      "Marc Bartra",
+      "Álvaro Arbeloa",
+      "Stephan El Shaarawy"
+    ]
+  },
+  {
+    "id": "add300-189",
+    "year": 2012,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Zlatan Ibrahimović represent at the 2012 UEFA European Championship?",
+    "answer": "Sweden",
+    "distractors": [
+      "Portugal",
+      "France",
+      "Denmark"
+    ]
+  },
+  {
+    "id": "add300-190",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Joe Rodon represent at the 2022 World Cup?",
+    "answer": "Wales",
+    "distractors": [
+      "Croatia",
+      "United States",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-191",
+    "year": 2025,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Benfica in 2025/26?",
+    "answer": "Nicolás Otamendi",
+    "distractors": [
+      "Thomas Meunier",
+      "Rodrigo Bentancur",
+      "Carlos Soler"
+    ]
+  },
+  {
+    "id": "add300-192",
+    "year": 2016,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did André Gomes represent at the 2016 UEFA European Championship?",
+    "answer": "Portugal",
+    "distractors": [
+      "Spain",
+      "Russia",
+      "England"
+    ]
+  },
+  {
+    "id": "add300-193",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did John Stones represent at the 2018 World Cup?",
+    "answer": "England",
+    "distractors": [
+      "Switzerland",
+      "Russia",
+      "Belgium"
+    ]
+  },
+  {
+    "id": "add300-194",
+    "year": 2017,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Porto in 2017/18?",
+    "answer": "Paulinho",
+    "distractors": [
+      "Achraf Hakimi",
+      "Yaya Touré",
+      "Stevan Jovetić"
+    ]
+  },
+  {
+    "id": "add300-195",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Johan Bakayoko represent at the 2024 UEFA European Championship?",
+    "answer": "Belgium",
+    "distractors": [
+      "Netherlands",
+      "Spain",
+      "England"
+    ]
+  },
+  {
+    "id": "add300-196",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Marco Asensio represent at the 2022 World Cup?",
+    "answer": "Spain",
+    "distractors": [
+      "Netherlands",
+      "Belgium",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-197",
+    "year": 2018,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Real Madrid in 2018/19?",
+    "answer": "Thibaut Courtois",
+    "distractors": [
+      "Arkadiusz Milik",
+      "William Carvalho",
+      "Matteo Darmian"
+    ]
+  },
+  {
+    "id": "add300-198",
+    "year": 2004,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Michael Ballack represent at the 2004 UEFA European Championship?",
+    "answer": "Germany",
+    "distractors": [
+      "England",
+      "Spain",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-199",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Corentin Tolisso represent at the 2018 World Cup?",
+    "answer": "France",
+    "distractors": [
+      "Sweden",
+      "Portugal",
+      "Costa Rica"
+    ]
+  },
+  {
+    "id": "add300-200",
+    "year": 2018,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Benfica in 2018/19?",
+    "answer": "Rafa Silva",
+    "distractors": [
+      "Arkadiusz Milik",
+      "Mesut Özil",
+      "Lorenzo Insigne"
+    ]
+  },
+  {
+    "id": "add300-201",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Federico Bernardeschi represent at the 2020 UEFA European Championship?",
+    "answer": "Italy",
+    "distractors": [
+      "France",
+      "England",
+      "Turkey"
+    ]
+  },
+  {
+    "id": "add300-202",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Jakub Kamiński represent at the 2022 World Cup?",
+    "answer": "Poland",
+    "distractors": [
+      "Denmark",
+      "Wales",
+      "Croatia"
+    ]
+  },
+  {
+    "id": "add300-203",
+    "year": 2016,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Marseille in 2016/17?",
+    "answer": "Dimitri Payet",
+    "distractors": [
+      "Marquinhos",
+      "André Gomes",
+      "Danilo"
+    ]
+  },
+  {
+    "id": "add300-204",
+    "year": 2016,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did William Carvalho represent at the 2016 UEFA European Championship?",
+    "answer": "Portugal",
+    "distractors": [
+      "Belgium",
+      "Turkey",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-205",
+    "year": 2002,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Rui Costa represent at the 2002 World Cup?",
+    "answer": "Portugal",
+    "distractors": [
+      "Sweden",
+      "Italy",
+      "Costa Rica"
+    ]
+  },
+  {
+    "id": "add300-206",
+    "year": 2019,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Lazio in 2019/20?",
+    "answer": "Sergej Milinković-Savić",
+    "distractors": [
+      "Kyle Walker",
+      "Solly March",
+      "Alex Telles"
+    ]
+  },
+  {
+    "id": "add300-207",
+    "year": 2012,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Iker Casillas represent at the 2012 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "Italy",
+      "France",
+      "England"
+    ]
+  },
+  {
+    "id": "add300-208",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Luka Modrić represent at the 2022 World Cup?",
+    "answer": "Croatia",
+    "distractors": [
+      "Netherlands",
+      "Costa Rica",
+      "Poland"
+    ]
+  },
+  {
+    "id": "add300-209",
+    "year": 2019,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Benfica in 2019/20?",
+    "answer": "Julian Weigl",
+    "distractors": [
+      "Willian",
+      "Diogo Costa",
+      "Samuel Umtiti"
+    ]
+  },
+  {
+    "id": "add300-210",
+    "year": 2004,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Henrik Larsson represent at the 2004 UEFA European Championship?",
+    "answer": "Sweden",
+    "distractors": [
+      "Portugal",
+      "Netherlands",
+      "Italy"
+    ]
+  },
+  {
+    "id": "add300-211",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Jude Bellingham represent at the 2022 World Cup?",
+    "answer": "England",
+    "distractors": [
+      "Denmark",
+      "United States",
+      "Poland"
+    ]
+  },
+  {
+    "id": "add300-212",
+    "year": 2012,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Lazio in 2012/13?",
+    "answer": "Lorik Cana",
+    "distractors": [
+      "Dani Alves",
+      "Lúcio",
+      "Andrey Arshavin"
+    ]
+  },
+  {
+    "id": "add300-213",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Pedro Neto represent at the 2024 UEFA European Championship?",
+    "answer": "Portugal",
+    "distractors": [
+      "Spain",
+      "England",
+      "Netherlands"
+    ]
+  },
+  {
+    "id": "add300-214",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Bruno Fernandes represent at the 2022 World Cup?",
+    "answer": "Portugal",
+    "distractors": [
+      "England",
+      "Croatia",
+      "Wales"
+    ]
+  },
+  {
+    "id": "add300-215",
+    "year": 2013,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Atlético Madrid in 2013/14?",
+    "answer": "Filipe Luís",
+    "distractors": [
+      "André Schürrle",
+      "Yohan Cabaye",
+      "Marten de Roon"
+    ]
+  },
+  {
+    "id": "add300-216",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Mattia Zaccagni represent at the 2024 UEFA European Championship?",
+    "answer": "Italy",
+    "distractors": [
+      "Denmark",
+      "Spain",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-217",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Luuk de Jong represent at the 2022 World Cup?",
+    "answer": "Netherlands",
+    "distractors": [
+      "Denmark",
+      "Wales",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-218",
+    "year": 2023,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Lille in 2023/24?",
+    "answer": "Edon Zhegrova",
+    "distractors": [
+      "Christopher Nkunku",
+      "James Milner",
+      "Vitinha"
+    ]
+  },
+  {
+    "id": "add300-219",
+    "year": 2016,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Toni Kroos represent at the 2016 UEFA European Championship?",
+    "answer": "Germany",
+    "distractors": [
+      "Belgium",
+      "England",
+      "Portugal"
+    ]
+  },
+  {
+    "id": "add300-220",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Nicola Zalewski represent at the 2022 World Cup?",
+    "answer": "Poland",
+    "distractors": [
+      "Denmark",
+      "Mexico",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-221",
+    "year": 2023,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Juventus in 2023/24?",
+    "answer": "Arkadiusz Milik",
+    "distractors": [
+      "Gonçalo Inácio",
+      "António Silva",
+      "Jan Oblak"
+    ]
+  },
+  {
+    "id": "add300-222",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Hakan Çalhanoğlu represent at the 2024 UEFA European Championship?",
+    "answer": "Turkey",
+    "distractors": [
+      "Belgium",
+      "Spain",
+      "Italy"
+    ]
+  },
+  {
+    "id": "add300-223",
+    "year": 2010,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Jermain Defoe represent at the 2010 World Cup?",
+    "answer": "England",
+    "distractors": [
+      "Germany",
+      "Portugal",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-224",
+    "year": 2020,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Manchester City in 2020/21?",
+    "answer": "John Stones",
+    "distractors": [
+      "Nuno Mendes",
+      "Ollie Watkins",
+      "Yannick Carrasco"
+    ]
+  },
+  {
+    "id": "add300-225",
+    "year": 2000,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Filippo Inzaghi represent at the 2000 UEFA European Championship?",
+    "answer": "Italy",
+    "distractors": [
+      "Belgium",
+      "Spain",
+      "Sweden"
+    ]
+  },
+  {
+    "id": "add300-226",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Antoine Griezmann represent at the 2022 World Cup?",
+    "answer": "France",
+    "distractors": [
+      "Netherlands",
+      "Croatia",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-227",
+    "year": 2017,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Real Madrid in 2017/18?",
+    "answer": "Luka Modrić",
+    "distractors": [
+      "Zlatan Ibrahimović",
+      "Mikel Oyarzabal",
+      "Ousmane Dembélé"
+    ]
+  },
+  {
+    "id": "add300-228",
+    "year": 2008,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Patrice Evra represent at the 2008 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Portugal",
+      "Germany",
+      "Russia"
+    ]
+  },
+  {
+    "id": "add300-229",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Vincent Kompany represent at the 2018 World Cup?",
+    "answer": "Belgium",
+    "distractors": [
+      "Switzerland",
+      "France",
+      "Denmark"
+    ]
+  },
+  {
+    "id": "add300-230",
+    "year": 2025,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Sporting CP in 2025/26?",
+    "answer": "Gonçalo Inácio",
+    "distractors": [
+      "John Stones",
+      "César Azpilicueta",
+      "Phil Foden"
+    ]
+  },
+  {
+    "id": "add300-231",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Danilo Pereira represent at the 2020 UEFA European Championship?",
+    "answer": "Portugal",
+    "distractors": [
+      "Spain",
+      "Italy",
+      "Sweden"
+    ]
+  },
+  {
+    "id": "add300-232",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Olivier Giroud represent at the 2018 World Cup?",
+    "answer": "France",
+    "distractors": [
+      "Sweden",
+      "Poland",
+      "Mexico"
+    ]
+  },
+  {
+    "id": "add300-233",
+    "year": 2023,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Aston Villa in 2023/24?",
+    "answer": "Lucas Digne",
+    "distractors": [
+      "Alisson",
+      "Youssef En-Nesyri",
+      "Joël Veltman"
+    ]
+  },
+  {
+    "id": "add300-234",
+    "year": 2012,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Bastian Schweinsteiger represent at the 2012 UEFA European Championship?",
+    "answer": "Germany",
+    "distractors": [
+      "Sweden",
+      "Netherlands",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-235",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Diego Costa represent at the 2018 World Cup?",
+    "answer": "Spain",
+    "distractors": [
+      "England",
+      "Russia",
+      "Portugal"
+    ]
+  },
+  {
+    "id": "add300-236",
+    "year": 2013,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Real Betis in 2013/14?",
+    "answer": "Rubén Castro",
+    "distractors": [
+      "Alexis Sánchez",
+      "Markel Susaeta",
+      "Radja Nainggolan"
+    ]
+  },
+  {
+    "id": "add300-237",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Sergio Busquets represent at the 2020 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "Turkey",
+      "Netherlands",
+      "Italy"
+    ]
+  },
+  {
+    "id": "add300-238",
+    "year": 2006,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Milan Baroš represent at the 2006 World Cup?",
+    "answer": "Czech Republic",
+    "distractors": [
+      "Netherlands",
+      "Costa Rica",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-239",
+    "year": 2020,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Arsenal in 2020/21?",
+    "answer": "Willian",
+    "distractors": [
+      "Marcus Rashford",
+      "Neco Williams",
+      "Florian Thauvin"
+    ]
+  },
+  {
+    "id": "add300-240",
+    "year": 2012,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Víctor Valdés represent at the 2012 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "Sweden",
+      "England",
+      "Russia"
+    ]
+  },
+  {
+    "id": "add300-241",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Ante Rebić represent at the 2018 World Cup?",
+    "answer": "Croatia",
+    "distractors": [
+      "Denmark",
+      "England",
+      "Mexico"
+    ]
+  },
+  {
+    "id": "add300-242",
+    "year": 2025,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Liverpool in 2025/26?",
+    "answer": "Jeremie Frimpong",
+    "distractors": [
+      "Noussair Mazraoui",
+      "Lewis Dunk",
+      "Nicolás Tagliafico"
+    ]
+  },
+  {
+    "id": "add300-243",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did John Stones represent at the 2020 UEFA European Championship?",
+    "answer": "England",
+    "distractors": [
+      "Portugal",
+      "Sweden",
+      "Denmark"
+    ]
+  },
+  {
+    "id": "add300-244",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Kieffer Moore represent at the 2022 World Cup?",
+    "answer": "Wales",
+    "distractors": [
+      "United States",
+      "Croatia",
+      "Portugal"
+    ]
+  },
+  {
+    "id": "add300-245",
+    "year": 2021,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Barcelona in 2021/22?",
+    "answer": "Gerard Piqué",
+    "distractors": [
+      "Mikel Merino",
+      "João Mário",
+      "Pau Torres"
+    ]
+  },
+  {
+    "id": "add300-246",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Nacho represent at the 2024 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "Netherlands",
+      "England",
+      "Turkey"
+    ]
+  },
+  {
+    "id": "add300-247",
+    "year": 2006,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Ivica Olić represent at the 2006 World Cup?",
+    "answer": "Croatia",
+    "distractors": [
+      "Mexico",
+      "England",
+      "Trinidad and Tobago"
+    ]
+  },
+  {
+    "id": "add300-248",
+    "year": 2013,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Real Sociedad in 2013/14?",
+    "answer": "Antoine Griezmann",
+    "distractors": [
+      "Stevan Jovetić",
+      "José Sosa",
+      "Jan Vertonghen"
+    ]
+  },
+  {
+    "id": "add300-249",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Gonçalo Ramos represent at the 2024 UEFA European Championship?",
+    "answer": "Portugal",
+    "distractors": [
+      "England",
+      "Turkey",
+      "Germany"
+    ]
+  },
+  {
+    "id": "add300-250",
+    "year": 2002,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Teddy Sheringham represent at the 2002 World Cup?",
+    "answer": "England",
+    "distractors": [
+      "Spain",
+      "Germany",
+      "Mexico"
+    ]
+  },
+  {
+    "id": "add300-251",
+    "year": 2022,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Chelsea in 2022/23?",
+    "answer": "Kai Havertz",
+    "distractors": [
+      "Solly March",
+      "Evan Ferguson",
+      "Eric Dier"
+    ]
+  },
+  {
+    "id": "add300-252",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Donyell Malen represent at the 2024 UEFA European Championship?",
+    "answer": "Netherlands",
+    "distractors": [
+      "Portugal",
+      "Belgium",
+      "Turkey"
+    ]
+  },
+  {
+    "id": "add300-253",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Matteo Darmian represent at the 2014 World Cup?",
+    "answer": "Italy",
+    "distractors": [
+      "Costa Rica",
+      "France",
+      "Portugal"
+    ]
+  },
+  {
+    "id": "add300-254",
+    "year": 2019,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Chelsea in 2019/20?",
+    "answer": "Ruben Loftus-Cheek",
+    "distractors": [
+      "Douglas Costa",
+      "Marcelo",
+      "Toby Alderweireld"
+    ]
+  },
+  {
+    "id": "add300-255",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Jamal Musiala represent at the 2020 UEFA European Championship?",
+    "answer": "Germany",
+    "distractors": [
+      "Turkey",
+      "England",
+      "Russia"
+    ]
+  },
+  {
+    "id": "add300-256",
+    "year": 2006,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Cristiano Ronaldo represent at the 2006 World Cup?",
+    "answer": "Portugal",
+    "distractors": [
+      "Czech Republic",
+      "Switzerland",
+      "Croatia"
+    ]
+  },
+  {
+    "id": "add300-257",
+    "year": 2015,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Real Betis in 2015/16?",
+    "answer": "Fabián Ruiz",
+    "distractors": [
+      "Augusto Fernández",
+      "Pepe",
+      "Pepe Reina"
+    ]
+  },
+  {
+    "id": "add300-258",
+    "year": 2016,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Dries Mertens represent at the 2016 UEFA European Championship?",
+    "answer": "Belgium",
+    "distractors": [
+      "Germany",
+      "France",
+      "Turkey"
+    ]
+  },
+  {
+    "id": "add300-259",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Koke represent at the 2018 World Cup?",
+    "answer": "Spain",
+    "distractors": [
+      "Mexico",
+      "Denmark",
+      "Belgium"
+    ]
+  },
+  {
+    "id": "add300-260",
+    "year": 2023,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Athletic Club in 2023/24?",
+    "answer": "Óscar de Marcos",
+    "distractors": [
+      "Randal Kolo Muani",
+      "Sokratis Papastathopoulos",
+      "Nicola Zalewski"
+    ]
+  },
+  {
+    "id": "add300-261",
+    "year": 2000,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Marc Overmars represent at the 2000 UEFA European Championship?",
+    "answer": "Netherlands",
+    "distractors": [
+      "Belgium",
+      "Spain",
+      "Italy"
+    ]
+  },
+  {
+    "id": "add300-262",
+    "year": 2006,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Sol Campbell represent at the 2006 World Cup?",
+    "answer": "England",
+    "distractors": [
+      "Ukraine",
+      "Italy",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-263",
+    "year": 2016,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Manchester United in 2016/17?",
+    "answer": "Phil Jones",
+    "distractors": [
+      "Rafinha",
+      "Gabriel Jesus",
+      "Koke"
+    ]
+  },
+  {
+    "id": "add300-264",
+    "year": 2000,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Nicolas Anelka represent at the 2000 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Portugal",
+      "Italy",
+      "Netherlands"
+    ]
+  },
+  {
+    "id": "add300-265",
+    "year": 2006,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Ruud van Nistelrooy represent at the 2006 World Cup?",
+    "answer": "Netherlands",
+    "distractors": [
+      "Italy",
+      "Mexico",
+      "Sweden"
+    ]
+  },
+  {
+    "id": "add300-266",
+    "year": 2016,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Atlético Madrid in 2016/17?",
+    "answer": "Thomas Partey",
+    "distractors": [
+      "Trent Alexander-Arnold",
+      "Adrien Rabiot",
+      "João Palhinha"
+    ]
+  },
+  {
+    "id": "add300-267",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Denzel Dumfries represent at the 2020 UEFA European Championship?",
+    "answer": "Netherlands",
+    "distractors": [
+      "Sweden",
+      "Denmark",
+      "Turkey"
+    ]
+  },
+  {
+    "id": "add300-268",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Thomas Vermaelen represent at the 2018 World Cup?",
+    "answer": "Belgium",
+    "distractors": [
+      "England",
+      "Germany",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-269",
+    "year": 2025,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Arsenal in 2025/26?",
+    "answer": "Jurriën Timber",
+    "distractors": [
+      "Rodrigo De Paul",
+      "Éder Militão",
+      "Ferran Torres"
+    ]
+  },
+  {
+    "id": "add300-270",
+    "year": 2016,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Jan Vertonghen represent at the 2016 UEFA European Championship?",
+    "answer": "Belgium",
+    "distractors": [
+      "England",
+      "Germany",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-271",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Grzegorz Krychowiak represent at the 2022 World Cup?",
+    "answer": "Poland",
+    "distractors": [
+      "Belgium",
+      "Portugal",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-272",
+    "year": 2025,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Atlético Madrid in 2025/26?",
+    "answer": "Jan Oblak",
+    "distractors": [
+      "Jordan Teze",
+      "Marquinhos",
+      "Bernardo Silva"
+    ]
+  },
+  {
+    "id": "add300-273",
+    "year": 2008,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Andrey Arshavin represent at the 2008 UEFA European Championship?",
+    "answer": "Russia",
+    "distractors": [
+      "Germany",
+      "Sweden",
+      "Turkey"
+    ]
+  },
+  {
+    "id": "add300-274",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Raúl Albiol represent at the 2014 World Cup?",
+    "answer": "Spain",
+    "distractors": [
+      "Portugal",
+      "Greece",
+      "Russia"
+    ]
+  },
+  {
+    "id": "add300-275",
+    "year": 2022,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Atlético Madrid in 2022/23?",
+    "answer": "Thomas Lemar",
+    "distractors": [
+      "Franck Kessié",
+      "Mikel Merino",
+      "Kai Havertz"
+    ]
+  },
+  {
+    "id": "add300-276",
+    "year": 2024,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Ryan Gravenberch represent at the 2024 UEFA European Championship?",
+    "answer": "Netherlands",
+    "distractors": [
+      "Portugal",
+      "Germany",
+      "France"
+    ]
+  },
+  {
+    "id": "add300-277",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did William Carvalho represent at the 2018 World Cup?",
+    "answer": "Portugal",
+    "distractors": [
+      "Mexico",
+      "France",
+      "Sweden"
+    ]
+  },
+  {
+    "id": "add300-278",
+    "year": 2017,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Sporting CP in 2017/18?",
+    "answer": "Jérémy Mathieu",
+    "distractors": [
+      "Adrien Rabiot",
+      "Vincent Kompany",
+      "Eduardo Salvio"
+    ]
+  },
+  {
+    "id": "add300-279",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did André Silva represent at the 2020 UEFA European Championship?",
+    "answer": "Portugal",
+    "distractors": [
+      "Turkey",
+      "Italy",
+      "Denmark"
+    ]
+  },
+  {
+    "id": "add300-280",
+    "year": 2014,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Vedran Ćorluka represent at the 2014 World Cup?",
+    "answer": "Croatia",
+    "distractors": [
+      "England",
+      "Netherlands",
+      "Russia"
+    ]
+  },
+  {
+    "id": "add300-281",
+    "year": 2016,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Roma in 2016/17?",
+    "answer": "Thomas Vermaelen",
+    "distractors": [
+      "William Carvalho",
+      "Bernardo Silva",
+      "Willy Caballero"
+    ]
+  },
+  {
+    "id": "add300-282",
+    "year": 2004,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Jérôme Rothen represent at the 2004 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Denmark",
+      "Germany",
+      "England"
+    ]
+  },
+  {
+    "id": "add300-283",
+    "year": 2002,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Luis Hernández represent at the 2002 World Cup?",
+    "answer": "Mexico",
+    "distractors": [
+      "Costa Rica",
+      "Belgium",
+      "Turkey"
+    ]
+  },
+  {
+    "id": "add300-284",
+    "year": 2017,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Athletic Club in 2017/18?",
+    "answer": "Raúl García",
+    "distractors": [
+      "Thiago Motta",
+      "Eden Hazard",
+      "Trent Alexander-Arnold"
+    ]
+  },
+  {
+    "id": "add300-285",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Andrea Belotti represent at the 2020 UEFA European Championship?",
+    "answer": "Italy",
+    "distractors": [
+      "Russia",
+      "Sweden",
+      "Turkey"
+    ]
+  },
+  {
+    "id": "add300-286",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Jérôme Boateng represent at the 2018 World Cup?",
+    "answer": "Germany",
+    "distractors": [
+      "France",
+      "Sweden",
+      "Spain"
+    ]
+  },
+  {
+    "id": "add300-287",
+    "year": 2017,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Villarreal in 2017/18?",
+    "answer": "Pau Torres",
+    "distractors": [
+      "Lucas Digne",
+      "Thibaut Courtois",
+      "Mattia De Sciglio"
+    ]
+  },
+  {
+    "id": "add300-288",
+    "year": 2016,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Anthony Martial represent at the 2016 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "England",
+      "Spain",
+      "Belgium"
+    ]
+  },
+  {
+    "id": "add300-289",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Matthias Ginter represent at the 2022 World Cup?",
+    "answer": "Germany",
+    "distractors": [
+      "Mexico",
+      "Costa Rica",
+      "Portugal"
+    ]
+  },
+  {
+    "id": "add300-290",
+    "year": 2020,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Atlético Madrid in 2020/21?",
+    "answer": "Ángel Correa",
+    "distractors": [
+      "Ismaël Bennacer",
+      "Sergio Busquets",
+      "Lucas Ocampos"
+    ]
+  },
+  {
+    "id": "add300-291",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Presnel Kimpembe represent at the 2020 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Belgium",
+      "Turkey",
+      "Portugal"
+    ]
+  },
+  {
+    "id": "add300-292",
+    "year": 2006,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Marco Materazzi represent at the 2006 World Cup?",
+    "answer": "Italy",
+    "distractors": [
+      "United States",
+      "Croatia",
+      "Mexico"
+    ]
+  },
+  {
+    "id": "add300-293",
+    "year": 2018,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Sporting CP in 2018/19?",
+    "answer": "Jérémy Mathieu",
+    "distractors": [
+      "Adam Lallana",
+      "Neymar",
+      "André Silva"
+    ]
+  },
+  {
+    "id": "add300-294",
+    "year": 1996,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Lilian Thuram represent at the 1996 UEFA European Championship?",
+    "answer": "France",
+    "distractors": [
+      "Italy",
+      "Portugal",
+      "England"
+    ]
+  },
+  {
+    "id": "add300-295",
+    "year": 2018,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Thibaut Courtois represent at the 2018 World Cup?",
+    "answer": "Belgium",
+    "distractors": [
+      "Portugal",
+      "Poland",
+      "Croatia"
+    ]
+  },
+  {
+    "id": "add300-296",
+    "year": 2013,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Sevilla in 2013/14?",
+    "answer": "Carlos Bacca",
+    "distractors": [
+      "Alexandre Lacazette",
+      "Aymeric Laporte",
+      "Sergi Roberto"
+    ]
+  },
+  {
+    "id": "add300-297",
+    "year": 2008,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Pepe Reina represent at the 2008 UEFA European Championship?",
+    "answer": "Spain",
+    "distractors": [
+      "Sweden",
+      "Turkey",
+      "Portugal"
+    ]
+  },
+  {
+    "id": "add300-298",
+    "year": 2022,
+    "topic": "World Cup",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Ben Davies represent at the 2022 World Cup?",
+    "answer": "Wales",
+    "distractors": [
+      "Germany",
+      "Canada",
+      "Portugal"
+    ]
+  },
+  {
+    "id": "add300-299",
+    "year": 2020,
+    "topic": "Club football",
+    "kind": "careers",
+    "difficulty": "Medium",
+    "text": "Which of these players appeared for Lille in 2020/21?",
+    "answer": "Mike Maignan",
+    "distractors": [
+      "Federico Chiesa",
+      "Aaron Ramsey",
+      "Adnan Januzaj"
+    ]
+  },
+  {
+    "id": "add300-300",
+    "year": 2020,
+    "topic": "UEFA European Championship",
+    "kind": "careers",
+    "difficulty": "Easy",
+    "text": "Which national team did Francesco Acerbi represent at the 2020 UEFA European Championship?",
+    "answer": "Italy",
+    "distractors": [
+      "Russia",
+      "Denmark",
+      "Sweden"
+    ]
   }
 ]

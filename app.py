@@ -42,7 +42,7 @@ PAGE = """
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }} | The Football IQ Game</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='design.css') }}">
-<script src="/static/arabic-labels.js?v=more-clues-1"></script>
+<script src="/static/arabic-labels.js?v=series-2"></script>
 <script src="/static/language.js?v=more-clues-1"></script>
 </head>
 <body class="cup-body">
@@ -51,7 +51,9 @@ PAGE = """
   <h1>{{ title }}</h1>
   {% if error %}<p role="alert">{{ error }}</p>{% endif %}
 
-  {% if screen == "setup" %}
+  {% if screen == "solo-settings" %}
+    <form method="post" class="card small">{% include "xo-settings.html" %}<button>Start</button></form>
+  {% elif screen == "setup" %}
     <form class="card small" method="post">
       {% if mode == "xo" %}
         <p>Team 1 vs. Team 2</p>
@@ -97,12 +99,13 @@ PAGE = """
 
       <form class="small{% if mode == 'xo' %} xo-start-form{% endif %}" method="post">
         {% if mode == "xo" %}
-          <label for="board-size">Board size</label>
-          <select id="board-size" name="board-size">
-            {% for side in board_sizes %}
-              <option value="{{ side }}">{{ side }}×{{ side }}</option>
-            {% endfor %}
-          </select>
+          {% include "xo-settings.html" %}
+          <label for="series">Series</label>
+          <select id="series" name="series">{% for n in [1,3,5] %}<option value="{{ n }}">Best of {{ n }}</option>{% endfor %}</select>
+          <label for="turn">Seconds per turn</label>
+          <select id="turn" name="turn">{% for n in [30,40,50,60] %}<option>{{ n }}</option>{% endfor %}</select>
+          <label for="round">Round timer (minutes)</label>
+          <select id="round" name="round"><option value="0">Off</option><option>4</option><option>5</option><option>6</option></select>
         {% endif %}
         <button id="start" name="action" value="start"
                 {% if joined|length != count %}disabled{% endif %}>Start</button>
@@ -286,10 +289,7 @@ def lobby(room_id, token):
                 if room["stage"] == "lobby":
                     if len(room["joined"]) == count:
                         if room["mode"] == "xo":
-                            size = request.form.get("board-size", "3")
-                            if size not in {str(side) for side in SIZES}:
-                                abort(400, "Choose a 3×3, 4×4, or 5×5 board.")
-                            room["xo_size"] = int(size)
+                            room["xo_settings"] = xo_settings(team=True)
                         room["stage"] = "naming"
                     else:
                         error = "Wait for all teams to join."
@@ -451,13 +451,31 @@ def quiz_state(room_id, token):
         return response
 
 
-@app.post("/xo/solo")
+def xo_settings(team=False):
+    def option(field, allowed, default):
+        value = request.form.get(field, str(default))
+        for item in allowed:
+            if str(item) == value:
+                return item
+        abort(400, "Invalid X/O setting")
+    settings = dict(size=option("board-size", SIZES, 3),
+                    difficulty=option("difficulty", ("Easy", "Medium", "Hard"), "Medium"))
+    if team:
+        settings.update(best_of=option("series", (1, 3, 5), 1),
+                        turn_seconds=option("turn", (30, 40, 50, 60), 30),
+                        round_minutes=option("round", (0, 4, 5, 6), 0))
+    return settings
+
+
+@app.route("/xo/solo", methods=["GET", "POST"])
 def solo_xo():
+    if request.method == "GET":
+        return render_page("solo-settings", "Solo X/O", board_sizes=SIZES)
     room_id, token = secrets.token_urlsafe(16), secrets.token_urlsafe(16)
     with room_lock:
         rooms[room_id] = {
             "mode": "xo", "stage": "reveal", "joined": {1},
-            "teams": {token: 1}, "names": {1: "You"}, "xo": Match(["You"], solo=True),
+            "teams": {token: 1}, "names": {1: "You"}, "xo": Match(["You"], solo=True, **xo_settings()),
         }
     return redirect(url_for("xo_page", room_id=room_id, token=token), code=303)
 
@@ -471,7 +489,7 @@ def get_xo_room(room_id, token):
 
 def get_xo_match(room, now):
     if "xo" not in room:
-        room["xo"] = Match([name for _, name in sorted(room["names"].items())], size=room.get("xo_size", 3), now=now)
+        room["xo"] = Match([name for _, name in sorted(room["names"].items())], now=now, **room.get("xo_settings", {}))
     return room["xo"]
 
 
@@ -526,8 +544,8 @@ def xo_state(room_id, token):
             elif action == "reveal" and (match.solo or match.finished):
                 match.revealed = True
                 match.revision += 1
-            elif action == "restart" and match.solo:
-                room["xo"] = match = Match(["You"], solo=True, size=match.size, revision=match.revision + 1)
+            elif (action == "restart" and match.solo) or (action == "next" and not match.solo and team == 0 and match.finished and not match.series_over):
+                room["xo"] = match = match.next_round(now)
             else:
                 abort(403)
         response = jsonify(**match.view(team, now), message=message)

@@ -1,0 +1,82 @@
+.xo-page { max-width: 48rem; }
+.xo-page h1 { margin-bottom: .6rem; }
+.xo-intro { color: var(--muted); }
+#seats { display: flex; justify-content: center; gap: .55rem; flex-wrap: wrap; }
+#seats span { padding: .42rem .75rem; border: 1px solid var(--line); background: #10221c; border-radius: .4rem; overflow-wrap: anywhere; }
+#seats .is-turn { color: var(--lime); border-color: var(--lime); }
+#status { font-weight: 800; }
+.xo-pitch { padding: clamp(.35rem, 1.8vw, 1rem); border: 1px solid #486454; border-radius: .8rem; background: linear-gradient(145deg, #254035, #101b19); box-shadow: 0 1rem 3rem #0208058c; }
+#board { table-layout: fixed; border-collapse: separate; border-spacing: clamp(.2rem, 1vw, .55rem); background: transparent; }
+#board td, #board th { padding: 0; border: 0; text-align: center; font-size: clamp(.65rem, 2.4vw, 1rem); overflow-wrap: anywhere; }
+#board th, .xo-corner { background: #0e1b17; border-radius: .45rem; }
+#board thead th { height: 3.7rem; padding: .2rem; }
+#board .xo-corner { font-weight: 900; color: var(--lime); }
+.xo-square { display: grid; place-content: center; gap: .15rem; width: 100%; min-height: clamp(3.85rem, 13vw, 6.3rem); padding: .22rem; background: #193229; font-size: clamp(.62rem, 2.3vw, .9rem); }
+.xo-square strong { font-size: clamp(1.2rem, 5vw, 2.1rem); line-height: 1; }
+.xo-square.claimed, .xo-square:disabled { opacity: 1; }
+.xo-square.team-0 { color: var(--lime); background: #293b23; }
+.xo-square.team-1 { color: #8ee3ff; background: #163746; }
+.xo-square.winning { border-color: currentColor; box-shadow: inset 0 0 1rem #e2ff8455; }
+.xo-actions { display: flex; gap: .6rem; justify-content: center; }
+#entry { color: var(--ink); background: var(--panel); border: 1px solid #64835a; border-radius: .75rem; width: min(92vw, 28rem); }
+#entry::backdrop { background: #020704bb; }
+#entry h2, #entry p { margin: .3rem 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .xo-pitch, #entry[open] { animation: board-in .3s ease-out; }
+  .winning strong { animation: mark-in .4s ease-out both; }
+  @keyframes board-in { from { opacity: 0; transform: translateY(.65rem); } }
+  @keyframes mark-in { from { transform: scale(.45); } }
+}
+
+#board .clue-photo {
+  display: block;
+  width: clamp(2.6rem, 10vw, 4.5rem);
+  height: clamp(2.6rem, 10vw, 4.5rem);
+  margin: .33rem auto;
+  object-fit: contain;
+}
+#board .clue-photo.coach, #board .clue-photo.player {
+  border-radius: .35rem;
+  object-fit: cover;
+  object-position: center 25%;
+}
+#suggestions { display: grid; gap: .24rem; }
+#suggestions:empty { display: none; }
+#suggestions button {
+  text-align: start;
+  background: #23362b;
+  color: var(--ink);
+  min-height: 2.3rem;
+  padding: .3rem .65rem;
+}
+
+.xo-turn-controls {
+  display: flex;
+  direction: ltr;
+  justify-content: flex-end;
+  gap: .4rem;
+  margin: 0 0 .65rem;
+}
+.xo-turn-controls button, #turn-clock {
+  min-height: 2.2rem;
+  padding: .35rem .65rem;
+  font-size: .85rem;
+}
+#turn-clock {
+  min-width: 3rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid #64835a;
+  border-radius: .5rem;
+  color: var(--lime);
+  background: #101b19;
+  font-variant-numeric: tabular-nums;
+}
+#end-vote, #lives { color: var(--lime); font-size: .9rem; }
+.xo-clue-label { display: block; padding: 0 .18rem .3rem; line-height: 1.15; }
+#board .clue-photo { max-width: 90%; }
+.xo-pitch[data-size="5"] .xo-square { min-height: clamp(3rem, 10vw, 5rem); }
+.xo-pitch[data-size="5"] #board .clue-photo { width: clamp(1.5rem, 8vw, 3.35rem); height: clamp(1.5rem, 8vw, 3.35rem); }
+
+#score, #round-clock { display: block; text-align: center; margin-top: .45rem; }
+#score { font-size: 1.4rem; }

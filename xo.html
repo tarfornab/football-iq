@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Football X/O | Football IQ</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='design.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='xo.css', v='series-2') }}">
+<script id="initial-board" type="application/json">{{ board | tojson }}</script>
+<script id="player-directory" type="application/json">{{ player_directory | tojson }}</script>
+<script defer src="{{ url_for('static', filename='xo.js', v='series-2') }}"></script>
+<script src="/static/arabic-labels.js?v=series-2"></script>
+<script src="/static/language.js?v=series-2"></script>
+</head>
+<body class="cup-body">
+<main class="xo-page" data-state="{{ state_url }}">
+  <a class="site-nav" href="{{ url_for('home') }}#xo">Football <span>IQ</span> Game</a>
+  <h1>Football <span>X/O</span></h1>
+  <p class="xo-intro">Pick a square and name a player who fits both clues.</p>
+  <div id="seats"></div>
+  <strong id="score" dir="ltr"></strong>
+  <span id="round-clock"></span>
+  <button id="next" hidden>Next round</button>
+  <p id="status" role="status">{{ "Your turn" if board.turn == board.team else "Waiting for your opponent…" }}</p>
+  <div id="turn-controls" class="xo-turn-controls" hidden>
+    <span id="turn-clock" role="timer" aria-label="Seconds left"></span>
+    <button type="button" id="pass">Pass</button>
+    <button type="button" id="end">End</button>
+  </div>
+  <p id="end-vote" role="status" hidden></p>
+  <p id="lives" role="status" hidden></p>
+  <div class="xo-pitch" data-size="{{ board.size }}">
+    <table id="board" aria-label="Football X/O board">
+      <thead><tr><td class="xo-corner">X/O</td>{% for clue in board.columns %}
+        <th scope="col">{% if clue.image %}<img class="clue-photo {{ clue.kind }}" src="{{ clue.image }}" alt="">{% endif %}<span class="xo-clue-label">{{ clue.name }}</span></th>
+      {% endfor %}</tr></thead>
+      <tbody>{% for clue in board.rows %}
+        {% set row_index = loop.index0 %}
+        <tr><th scope="row">{% if clue.image %}<img class="clue-photo {{ clue.kind }}" src="{{ clue.image }}" alt="">{% endif %}<span class="xo-clue-label">{{ clue.name }}</span></th>
+        {% for column in board.columns %}
+          {% set cell = board.cells[row_index * board.size + loop.index0] %}
+          <td><button type="button" class="xo-square" disabled>
+            {% if cell %}
+              {% if not board.solo %}<strong>{{ "X" if cell.team == 0 else "O" }}</strong>{% endif %}
+              <span>{{ cell.player }}</span>
+            {% else %}<strong>+</strong>{% endif %}
+          </button></td>
+        {% endfor %}</tr>
+      {% endfor %}</tbody>
+    </table>
+    <noscript>Enable JavaScript to play X/O.</noscript>
+  </div>
+  <p id="feedback" role="status"></p>
+  <div class="xo-actions">
+    <button type="button" id="reveal" hidden>Reveal answers</button>
+    <button type="button" id="restart" hidden>New board</button>
+  </div>
+  <dialog id="entry">
+    <form id="guess">
+      <h2 id="clues"></h2>
+      <p id="rule"></p>
+      <label for="player">Player name</label>
+      <input name="player" id="player" maxlength="80" required autocomplete="off" autofocus>
+      <div id="suggestions" aria-label="Player name suggestions"></div>
+      <button class="primary">Submit</button>
+      <button type="button" id="cancel">Cancel</button>
+      <p id="entry-note" role="status"></p>
+    </form>
+  </dialog>
+</main>
+</body>
+</html>
