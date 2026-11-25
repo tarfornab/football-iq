@@ -35,6 +35,16 @@ def preserve_language_on_redirect(response):
 
 
 PAGE = """
+{% macro board_settings(board_sizes) %}
+<label for="board-size">Board size</label>
+          <select id="board-size" name="board-size">
+            {% for side in board_sizes %}
+              <option value="{{ side }}">{{ side }}×{{ side }}</option>
+            {% endfor %}
+          </select>
+          <label for="difficulty">Difficulty</label>
+          <select id="difficulty" name="difficulty"><option value="Easy">Easy</option><option selected value="Medium">Medium</option><option value="Hard">Hard</option></select>
+{% endmacro %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +62,7 @@ PAGE = """
   {% if error %}<p role="alert">{{ error }}</p>{% endif %}
 
   {% if screen == "solo-settings" %}
-    <form method="post" class="card small">{% include "xo-settings.html" %}<button>Start</button></form>
+    <form method="post" class="card small">{{ board_settings(board_sizes) }}<button>Start</button></form>
   {% elif screen == "setup" %}
     <form class="card small" method="post">
       {% if mode == "xo" %}
@@ -99,7 +109,7 @@ PAGE = """
 
       <form class="small{% if mode == 'xo' %} xo-start-form{% endif %}" method="post">
         {% if mode == "xo" %}
-          {% include "xo-settings.html" %}
+          {{ board_settings(board_sizes) }}
           <label for="series">Series</label>
           <select id="series" name="series">{% for n in [1,3,5] %}<option value="{{ n }}">Best of {{ n }}</option>{% endfor %}</select>
           <label for="turn">Seconds per turn</label>
