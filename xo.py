@@ -264,11 +264,21 @@ def difficulty_boards(size, difficulty):
     return ranked[len(ranked)*level//3:len(ranked)*(level+1)//3]
 
 
+TOP_CLUBS = {"arsenal", "chelsea", "city", "united", "liverpool", "tottenham",
+             "barcelona", "real", "atletico", "juventus", "milan", "inter", "psg"}
+FAMOUS_PLAYERS = {"messi", "ronaldo", "neymar", "mbappe", "salah", "zlatan", "henry",
+                  "ronaldinho", "beckham", "pirlo", "lamine-yamal", "erling-haaland"}
+FAMOUS_COACHES = {"pep", "ancelotti", "mourinho", "klopp", "zidane", "alex-ferguson",
+                  "arsene-wenger", "luis-enrique", "diego-simeone"}
+with Path(__file__).with_name("xo-layouts.json").open(encoding="utf-8") as layout_file:
+    RULED_BOARDS = json.load(layout_file)
+
+
 def draw_board(size, difficulty="Medium"):
     key = (size, difficulty)
     deck = DECKS.setdefault(key, [])
     if not deck:
-        deck.extend(difficulty_boards(size, difficulty))
+        deck.extend(RULED_BOARDS[str(size)][difficulty] if size in (3, 4) else difficulty_boards(size, difficulty))
         shuffle(deck)
         recent = LAST_BOARDS.get(key, ())
         for i in range(min(2, len(deck))):
@@ -321,6 +331,7 @@ class Match:
         self.round_index = round_index
         self.scores = list(scores or [0, 0])
         self.expired = False
+        self.continue_at = None
         rows, columns = draw_board(size, difficulty)
         self.rows = sample(rows, size)
         self.columns = sample(columns, size)
@@ -430,7 +441,7 @@ class Match:
                          image=(f"/static/{clue_image(key)}" if Path(__file__).with_name("static").joinpath(clue_image(key)).is_file() else None))
                     for key in keys]
         return dict(rows=clues(self.rows), columns=clues(self.columns), names=self.names, solo=self.solo, team=team,
-                    scores=self.scores, series_over=self.series_over, round_number=self.round_index + 1,
+                    best_of=self.best_of, scores=self.scores, series_over=self.series_over, round_number=self.round_index + 1,
                     round_remaining=max(0, self.round_end - (monotonic() if now is None else now))
                     if self.round_end is not None and not self.finished else None,
                     size=self.size, lives=self.lives, lost=self.lost, end_vote=self.end_vote, notice=self.notice,

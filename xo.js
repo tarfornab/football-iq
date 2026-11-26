@@ -101,8 +101,13 @@ function isPictureBoard(board) {
 
 let clockEnds = null, roundEnds = null;
 
+function formatTime(end) {
+  const seconds = Math.max(0, Math.ceil((end - performance.now()) / 1000));
+  return Math.floor(seconds / 60) + ':' + String(seconds % 60).padStart(2, '0');
+}
+
 function updateClock() {
-  get('round-clock').textContent = roundEnds === null ? '' : translate('Round: {0}s', Math.max(0, Math.ceil((roundEnds - performance.now()) / 1000)));
+  get('round-clock').textContent = roundEnds === null ? '' : (isArabic ? 'وقت الجولة ' : 'Round time ') + formatTime(roundEnds);
   if (clockEnds === null) return;
   const seconds = Math.max(0, Math.ceil((clockEnds - performance.now()) / 1000));
   get('turn-clock').textContent = translate('{0}s', seconds);
@@ -120,6 +125,7 @@ function takeState(board) {
 
 function render() {
   get('score').textContent = state.solo ? '' : state.scores.join(':');
+  get('series-info').textContent = state.solo ? '' : (isArabic ? 'الجولة ' : 'Round ') + state.round_number + ' · ' + (isArabic ? 'الأفضل من ' : 'Best of ') + state.best_of;
   get('next').hidden = state.solo || !state.finished || state.series_over || state.team !== 0;
   const status = state.series_over ? translate('{0} wins the series!', state.names[state.winner]) : state.winner !== null ? translate('{0} wins!', state.names[state.winner])
     : state.lost ? translate('Game over. No lives left.')

@@ -80,3 +80,5 @@
 
 #score, #round-clock { display: block; text-align: center; margin-top: .45rem; }
 #score { font-size: 1.4rem; }
+
+#series-info,#round-clock{display:block;text-align:center}#round-clock{font-weight:800;color:var(--lime);font-variant-numeric:tabular-nums}#next[hidden]{display:none}

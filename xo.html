@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Football X/O | Football IQ</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='design.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='xo.css', v='series-2') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='xo.css', v='series-3') }}">
 <script id="initial-board" type="application/json">{{ board | tojson }}</script>
 <script id="player-directory" type="application/json">{{ player_directory | tojson }}</script>
-<script defer src="{{ url_for('static', filename='xo.js', v='series-2') }}"></script>
+<script defer src="{{ url_for('static', filename='xo.js', v='series-3') }}"></script>
 <script src="/static/arabic-labels.js?v=series-2"></script>
 <script src="/static/language.js?v=series-2"></script>
 </head>
@@ -19,7 +19,8 @@
   <p class="xo-intro">Pick a square and name a player who fits both clues.</p>
   <div id="seats"></div>
   <strong id="score" dir="ltr"></strong>
-  <span id="round-clock"></span>
+  <small id="series-info"></small>
+  <span id="round-clock" role="timer"></span>
   <button id="next" hidden>Next round</button>
   <p id="status" role="status">{{ "Your turn" if board.turn == board.team else "Waiting for your opponent…" }}</p>
   <div id="turn-controls" class="xo-turn-controls" hidden>
