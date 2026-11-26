@@ -1,0 +1,11 @@
+<!doctype html><html lang="{{ 'ar' if request.args.get('lang') == 'ar' else 'en' }}"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guess the Clubs · Football IQ</title><link rel="stylesheet" href="{{ url_for('static',filename='guess.css') }}"></head>
+<body><main><a id="home" href="/?lang={{request.args.get('lang','en')}}#guess">← Football IQ</a>
+<h1 id="title">Guess the Clubs</h1>
+<header><strong id="score"></strong><time id="clock">2:00</time></header>
+<section id="waiting"><p id="instructions"></p>{% if host %}<button id="start"></button>{% endif %}</section>
+<section id="play" hidden><div id="pitch"><svg class="lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width=".4"><rect x="2" y="2" width="96" height="96"/><path d="M2 50h96 M28 2v14h44V2 M28 98V84h44v14 M40 2v5h20V2 M40 98v-5h20v5"/><circle cx="50" cy="50" r="10"/></g></svg><div id="formation"></div></div>
+<form id="answer"><label for="club" id="label"></label><div class="entry"><input id="club" autocomplete="off" autocapitalize="none" spellcheck="false"><button id="submit">→</button></div><div id="suggestions"></div></form></section>
+<p id="message" role="status"></p><section id="results" hidden><h2 id="resultTitle"></h2><ol id="ranking"></ol><a href="/?lang={{request.args.get('lang','en')}}#guess" id="back"></a></section></main>
+<script id="config" type="application/json">{{ {'url':state_url,'clubs':clubs,'host':host}|tojson }}</script><script src="/static/guess.js"></script></body></html>

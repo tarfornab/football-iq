@@ -9,6 +9,8 @@ from quiz import Quiz
 from imposter import ROSTER, move as imposter_move, new_round as new_imposter_round
 from xo import Match, PLAYER_DIRECTORY, SIZES
 
+from guess_clubs import GuessRound, CLUBS
+
 import qrcode
 from flask import (
     Flask, abort, jsonify, redirect, render_template, render_template_string,
@@ -61,7 +63,10 @@ PAGE = """
   <h1>{{ title }}</h1>
   {% if error %}<p role="alert">{{ error }}</p>{% endif %}
 
-  {% if screen == "solo-settings" %}
+  {% if screen == "guess-menu" %}
+    <form class="card small" method="post"><button class="button">Guess the Clubs</button></form>
+    <a href="/#guess">Back to games</a>
+  {% elif screen == "solo-settings" %}
     <form method="post" class="card small">{{ board_settings(board_sizes) }}<button>Start</button></form>
   {% elif screen == "setup" %}
     <form class="card small" method="post">
@@ -117,6 +122,7 @@ PAGE = """
           <label for="round">Round timer (minutes)</label>
           <select id="round" name="round"><option value="0">Off</option><option>4</option><option>5</option><option>6</option></select>
         {% endif %}
+        {% if mode == "guess" %}<label class="card"><input type="radio" required name="game" value="clubs"> Guess the Clubs</label>{% endif %}
         <button id="start" name="action" value="start"
                 {% if joined|length != count %}disabled{% endif %}>Start</button>
       </form>
@@ -298,6 +304,8 @@ def lobby(room_id, token):
                     abort(403)
                 if room["stage"] == "lobby":
                     if len(room["joined"]) == count:
+                        if room["mode"] == "guess" and request.form.get("game") != "clubs":
+                            abort(400, "Select Guess the Clubs.")
                         if room["mode"] == "xo":
                             room["xo_settings"] = xo_settings(team=True)
                         room["stage"] = "naming"
@@ -382,6 +390,8 @@ def reveal(room_id, token):
 
         names = sorted(room["names"].items())
 
+        if room["mode"] == "guess":
+            return redirect(url_for("guess_play", room_id=room_id, token=token))
         if room["mode"] == "quiz":
             return redirect(url_for("quiz_page", room_id=room_id, token=token))
         if room["mode"] == "xo":
@@ -591,6 +601,55 @@ def imposter_page(token):
         response = app.make_response(render_template("imposter.html", game=game.copy(), secret=secret))
     response.headers["Cache-Control"] = "private, no-store, max-age=0"
     return response
+
+
+@app.route("/guess/solo", methods=["GET", "POST"])
+def guess_solo():
+    if request.method == "GET":
+        return render_page("guess-menu", "Guess")
+    room_id, token = secrets.token_urlsafe(16), secrets.token_urlsafe(16)
+    with room_lock:
+        rooms[room_id] = {"mode": "guess", "stage": "reveal", "joined": {1},
+                          "teams": {token: 1}, "names": {1: "You"}}
+    return redirect(url_for("guess_play", room_id=room_id, token=token), code=303)
+
+
+def guess_room(room_id, token):
+    room, number = get_team(room_id, token)
+    if room["mode"] != "guess" or room["stage"] != "reveal" or number not in room["joined"]:
+        abort(403)
+    if "guess" not in room:
+        room["guess"] = GuessRound(room["names"])
+    return room["guess"], number
+
+
+@app.get("/guess/<room_id>/<token>")
+def guess_play(room_id, token):
+    with room_lock:
+        game, number = guess_room(room_id, token)
+    return render_template("guess.html", clubs=sorted(CLUBS), host=number == 1,
+                           state_url=url_for("guess_state", room_id=room_id, token=token))
+
+
+@app.route("/guess/<room_id>/<token>/state", methods=["GET", "POST"])
+def guess_state(room_id, token):
+    with room_lock:
+        game, number = guess_room(room_id, token)
+        now = monotonic()
+        feedback = None
+        if request.method == "POST":
+            data = request.get_json()
+            if not isinstance(data, dict):
+                abort(400)
+            if data.get("start"):
+                if number != 1:
+                    abort(403)
+                game.start(now)
+            else:
+                feedback = game.answer(number, data, now)
+        response = jsonify(game.view(number, now), feedback)
+        response.headers["Cache-Control"] = "no-store"
+        return response
 
 
 if __name__ == "__main__":
